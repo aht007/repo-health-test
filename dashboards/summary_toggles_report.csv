@@ -1,0 +1,984 @@
+name,ida_name,name_a,toggle_type,all_envs_match_s,class_s,code_owner_s,computed_status_edge_s,computed_status_prod_s,computed_status_stage_s,module_s,newest_modified_s,note_s,oldest_created_s,creation_date_a,default_a,description_a,implementation_a,line_number_a,source_file_a,target_removal_date_a,tickets_a,url_a,use_cases_a,warning_a
+ACE_CHANNEL_SAILTHRU_DEBUG,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ALLOW_HIDING_DISCUSSION_TAB,lms,ALLOW_HIDING_DISCUSSION_TAB,django_settings,,,,,,,,,,,2015-06-15,False,"If True, it adds an option to show/hide the discussions tab.",DjangoSetting,"[6, 6, 6, 6, 6, 6, 6]",lms/djangoapps/discussion/settings/common.py,,https://github.com/openedx/edx-platform/pull/8474,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/discussion/settings/common.py#L6-L6,['open_edx'],
+APPEND_SLASH,lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+AUTH_TOKENS['AWS_QUERYSTRING_AUTH'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+AUTH_TOKENS['BULK_EMAIL_LOG_SENT_EMAILS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['CELERY_BROKER_USE_SSL'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+AUTH_TOKENS['CSRF_COOKIE_SECURE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['EMAIL_USE_COURSE_ID_FROM_FOR_BULK'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['EMAIL_USE_TLS'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+AUTH_TOKENS['ENABLE_AUTHN_LOGIN_BLOCK_HIBP_POLICY'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['ENABLE_AUTHN_LOGIN_NUDGE_HIBP_POLICY'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['ENABLE_AUTHN_REGISTER_HIBP_POLICY'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['ENABLE_AUTHN_RESET_PASSWORD_HIBP_POLICY'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['ENABLE_COMPREHENSIVE_THEMING'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['ENABLE_COPPA_COMPLIANCE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['ENABLE_DEMOGRAPHICS_COLLECTION'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['ENABLE_DYNAMIC_REGISTRATION_FIELDS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['ENABLE_SAVE_FOR_LATER'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['LOG_REQUEST_USER_CHANGES'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['LTI_NRPS_DISALLOW_PII'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['MARKETING_EMAILS_OPT_IN'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['SESSION_COOKIE_SECURE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AUTH_TOKENS['SHOW_ACCOUNT_ACTIVATION_CTA'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+AWS_QUERYSTRING_AUTH,lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+BADGR_ENABLE_NOTIFICATIONS,lms,BADGR_ENABLE_NOTIFICATIONS,django_settings,,,,,False,,,,,,2021-07-29,False,"Optional setting for enabling email notifications. When set to ""True"",
+    learners will be notified by email when they earn a badge.",DjangoSetting,"[3653, 3653, 3653, 3653, 3653, 3653, 3653]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L3653-L3653,['open_edx'],Review FEATURES['ENABLE_OPENBADGES'] for further context.
+BLOCKSTORE_USE_BLOCKSTORE_APP_API,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+BLOCK_STRUCTURES_SETTINGS['PRUNING_ACTIVE'],lms,BLOCK_STRUCTURES_SETTINGS['PRUNING_ACTIVE'],django_settings,True,,,True,True,True,,,,,2018-03-22,False,"When `True`, only a specified number of versions of block structure
+   files are kept for each structure, and the rest are cleaned up. The number of versions that
+   are kept can be specified in the `BlockStructureConfiguration`, which can be edited in
+   Django Admin. The default number of versions that are kept is `5`.",DjangoSetting,"[2842, 2842, 2842, 2842, 2842, 2842, 2842, 2842, 2842]",lms/envs/common.py,2018-06-22,"https://github.com/openedx/edx-platform/pull/14571,
+   https://github.com/openedx/edx-platform/pull/17760,
+   https://openedx.atlassian.net/browse/DEPR-146",https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L2842-L2842,['temporary'],This toggle will likely be deprecated and removed.
+BROKER_TRANSPORT_OPTIONS['fanout_patterns'],lms,,django_settings,True,,,True,True,,,,,,,,,,,,,,,,
+BROKER_TRANSPORT_OPTIONS['fanout_prefix'],lms,,django_settings,True,,,True,True,,,,,,,,,,,,,,,,
+BROKER_USE_SSL,lms,,django_settings,True,,,False,False,,,,,,,,,,,,,,,,
+BULK_EMAIL_LOG_SENT_EMAILS,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+BULK_EMAIL_SEND_USING_EDX_ACE,lms,BULK_EMAIL_SEND_USING_EDX_ACE,django_settings,,,,,,,,,,,2022-02-10,False,"If True, use edx-ace to send bulk email messages",DjangoSetting,"[20, 20, 20, 20, 20, 20, 20]",lms/djangoapps/bulk_email/toggles.py,,https://github.com/openedx/build-test-release-wg/issues/100,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/bulk_email/toggles.py#L20-L20,['open_edx'],
+CALIPER_EVENTS_ENABLED,lms,,django_settings,,SettingToggle,,False,,,,,,,,,,,,,,,,,
+CELERYD_HIJACK_ROOT_LOGGER,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+CELERY_BROKER_USE_SSL,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+CELERY_CREATE_MISSING_QUEUES,lms,,django_settings,True,,,True,True,,,,,,,,,,,,,,,,
+CELERY_IGNORE_RESULT,lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+CELERY_SEND_EVENTS,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+CELERY_SEND_TASK_SENT_EVENT,lms,,django_settings,True,,,True,True,,,,,,,,,,,,,,,,
+CELERY_STORE_ERRORS_EVEN_IF_IGNORED,lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+CELERY_TRACK_STARTED,lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+COOKIE_NAME_CHANGE_ACTIVATE,lms,COOKIE_NAME_CHANGE_ACTIVATE,django_settings,,,,,,,,,,,2021-08-04,False,Used to enable CookieNameChange middleware which changes a cookie name in request.COOKIES,DjangoSetting,"[60, 60, 60, 60, 60, 60, 60, 60, 60]",openedx/core/djangoapps/cookie_metadata/middleware.py,2021-10-01,https://openedx.atlassian.net/browse/ARCHBOM-1872,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/cookie_metadata/middleware.py#L60-L60,['temporary'],This should be set at the same time you set COOKIE_NAME_CHANGE_EXPAND_INFO setting
+CORS_ALLOW_CREDENTIALS,lms,,django_settings,True,,,True,True,,,,,,,,,,,,,,,,
+CORS_ALLOW_INSECURE,lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+CORS_ORIGIN_ALLOW_ALL,lms,,django_settings,True,,,False,False,,,,,,,,,,,,,,,,
+COURSEGRAPH_DUMP_COURSE_ON_PUBLISH,lms,COURSEGRAPH_DUMP_COURSE_ON_PUBLISH,django_settings,,,,,,,,,,,2022-01-27,False,"Whether, upon publish, a course should automatically
+      be exported to Neo4j via the connection parameters specified in
+      `COURSEGRAPH_CONNECTION`.",DjangoSetting,"[2322, 2322, 2322, 2322, 2322, 2322]",cms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/cms/envs/common.py#L2322-L2322,['open_edx'],
+COURSES_INVITE_ONLY,lms,COURSES_INVITE_ONLY,django_settings,True,SettingToggle,,False,False,False,,,,,2019-05-16,False,Setting this sets the default value of INVITE_ONLY across all courses in a given deployment,SettingToggle,"[86, 86, 86, 86, 86, 86, 86]",lms/djangoapps/courseware/toggles.py,,https://github.com/mitodl/edx-platform/issues/123,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/courseware/toggles.py#L86-L86,['open_edx'],
+CSRF_COOKIE_HTTPONLY,lms,,django_settings,True,,,False,False,,,,,,,,,,,,,,,,
+CSRF_COOKIE_SECURE,lms,,django_settings,True,,,True,True,,,,,,,,,,,,,,,,
+CSRF_USE_SESSIONS,lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+CUSTOM_COURSES_EDX,lms,CUSTOM_COURSES_EDX,django_settings,,,,,,,,,,,2015-04-10,False,"Set to True to enable Custom Courses for edX, a feature that is more commonly known as
+   CCX. Documentation for configuring and using this feature is available at
+   https://edx.readthedocs.io/projects/open-edx-ca/en/latest/set_up_course/custom_courses.html",DjangoSetting,"[312, 312, 312, 312, 312, 312, 312, 312]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/6636,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L312-L312,"['opt_in', 'circuit_breaker']","When set to true, 'lms.djangoapps.ccx.overrides.CustomCoursesForEdxOverrideProvider' will
+    be added to MODULESTORE_FIELD_OVERRIDE_PROVIDERS"
+CourseDurationLimitConfig.enabled,lms,CourseDurationLimitConfig.enabled,configuration_models,,,,,,,,,,,2018-11-02,False,"When enabled, users will have a limited time to complete and audit the course. The exact
+       duration is given by the ""weeks_to_complete"" course detail. When enabled, it is necessary to also define the
+       ""enabled_as_of"" flag: only enrollments created after this date will be affected.",ConfigurationModel,"[16, 16, 16, 16, 16, 16]",openedx/features/course_duration_limits/models.py,,,https://github.com/openedx/edx-platform/blob/master/openedx/features/course_duration_limits/models.py#L16-L16,['opt_in'],
+CourseHLSPlaybackEnabledFlag.course_id,lms,CourseHLSPlaybackEnabledFlag.course_id,configuration_models,,,,,,,,,,,2017-04-19,False,"Add the ""hls"" profile to all displayed videos for a single course.",ConfigurationModel,"[67, 67, 67, 67, 67, 67, 67]",openedx/core/djangoapps/video_config/models.py,,https://github.com/openedx/edx-platform/pull/14924,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/video_config/models.py#L67-L67,['open_edx'],
+CourseVideoUploadsEnabledByDefault.course_id,lms,CourseVideoUploadsEnabledByDefault.course_id,configuration_models,,,,,,,,,,,2017-11-10,False,"Allow video uploads for a specific course. This enables the
+      ""Video Uploads"" menu in the CMS.",ConfigurationModel,"[105, 105, 105, 105, 105, 105, 105]",openedx/core/djangoapps/video_pipeline/models.py,,https://github.com/openedx/edx-platform/pull/16536,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/video_pipeline/models.py#L105-L105,['open_edx'],
+DCS_SESSION_COOKIE_SAMESITE_FORCE_ALL,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+DEBUG,lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+DEBUG_PROPAGATE_EXCEPTIONS,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+DEBUG_TOOLBAR_PATCH_SETTINGS,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+DEBUG_TRACK_LOG,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+DEFAULT_MOBILE_AVAILABLE,lms,DEFAULT_MOBILE_AVAILABLE,django_settings,True,,,False,False,False,,,,,2021-01-26,False,"This specifies if the courses are available for mobile by default. To make any individual
+   course available for mobile one can set the value of Mobile Course Available to true in Advanced Settings from the
+   studio when this is False.",DjangoSetting,"[4059, 4059, 4059, 4059, 4059, 4059, 4059]",lms/envs/common.py,,https://openedx.atlassian.net/browse/OSPR-1985,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L4059-L4059,['open_edx'],
+DEFAULT_TEMPLATE_ENGINE['APP_DIRS'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+DEV_CONTENT,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+DISABLE_DEPRECATED_SIGNIN_URL,lms,DISABLE_DEPRECATED_SIGNIN_URL,django_settings,,,,,,,,,,,2019-12-02,False,Toggle for removing the deprecated /signin url.,DjangoSetting,"[2585, 2585, 2585, 2585, 2585, 2585, 2585, 2585, 2585]",cms/envs/common.py,2020-06-01,ARCH-1253,https://github.com/openedx/edx-platform/blob/master/cms/envs/common.py#L2585-L2585,['temporary'],This url can be removed once it no longer has any real traffic.
+DISABLE_DEPRECATED_SIGNUP_URL,lms,DISABLE_DEPRECATED_SIGNUP_URL,django_settings,,,,,,,,,,,2019-12-02,False,Toggle for removing the deprecated /signup url.,DjangoSetting,"[2596, 2596, 2596, 2596, 2596, 2596, 2596, 2596, 2596]",cms/envs/common.py,2020-06-01,ARCH-1253,https://github.com/openedx/edx-platform/blob/master/cms/envs/common.py#L2596-L2596,['temporary'],This url can be removed once it no longer has any real traffic.
+DISABLE_JWT_FOR_MOBILE,lms,DISABLE_JWT_FOR_MOBILE,waffle_switches,,,,,,,,,,,2022-10-14,False,"Set toggle to True to ignore mobile requests
+   for JWTs, and instead provide the legacy opaque Bearer token. This
+   toggle can be used as a temporary kill switch as the mobile app
+   attempts to rollout the transition to JWT authentication for the
+   first time.",WaffleSwitch,"[10, 10, 10, 10, 10, 10, 10]",openedx/core/djangoapps/oauth_dispatch/toggles.py,2022-12-30,,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/oauth_dispatch/toggles.py#L10-L10,['temporary'],
+DOC_STORE_CONFIG['ssl'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+EMAIL_USE_COURSE_ID_FROM_FOR_BULK,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+EMAIL_USE_LOCALTIME,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+EMAIL_USE_SSL,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+EMAIL_USE_TLS,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENABLE_AUTHN_LOGIN_BLOCK_HIBP_POLICY,lms,ENABLE_AUTHN_LOGIN_BLOCK_HIBP_POLICY,django_settings,,,,,True,,,,,,2022-03-29,False,"When enabled, this toggle activates the use of the password validation
+   on Authn MFE's login.",DjangoSetting,"[4951, 4951, 4951, 4951, 4951, 4951, 4951, 4951]",lms/envs/common.py,None,https://openedx.atlassian.net/browse/VAN-667,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L4951-L4951,['temporary'],
+ENABLE_AUTHN_LOGIN_NUDGE_HIBP_POLICY,lms,ENABLE_AUTHN_LOGIN_NUDGE_HIBP_POLICY,django_settings,,,,,True,,,,,,2022-03-29,False,"When enabled, this toggle activates the use of the password validation
+   on Authn MFE's login.",DjangoSetting,"[4939, 4939, 4939, 4939, 4939, 4939, 4939, 4939]",lms/envs/common.py,None,https://openedx.atlassian.net/browse/VAN-668,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L4939-L4939,['temporary'],
+ENABLE_AUTHN_REGISTER_HIBP_POLICY,lms,ENABLE_AUTHN_REGISTER_HIBP_POLICY,django_settings,,,,,True,,,,,,2022-03-25,False,"When enabled, this toggle activates the use of the password validation
+   HIBP Policy on Authn MFE's registration.",DjangoSetting,"[4928, 4928, 4928, 4928, 4928, 4928, 4928]",lms/envs/common.py,,https://openedx.atlassian.net/browse/VAN-669,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L4928-L4928,['open_edx'],
+ENABLE_AUTHN_RESET_PASSWORD_HIBP_POLICY,lms,ENABLE_AUTHN_RESET_PASSWORD_HIBP_POLICY,django_settings,,,,,True,,,,,,2021-12-03,False,"When enabled, this toggle activates the use of the password validation
+   HIBP Policy.",DjangoSetting,"[4919, 4919, 4919, 4919, 4919, 4919, 4919]",lms/envs/common.py,,https://openedx.atlassian.net/browse/VAN-666,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L4919-L4919,['open_edx'],
+ENABLE_CODEJAIL_REST_SERVICE,lms,ENABLE_CODEJAIL_REST_SERVICE,django_settings,True,SettingToggle,,False,False,False,xmodule.capa.safe_exec.remote_exec,,,,2021-08-19,False,"Set this to True if you want to run Codejail code using
+   a separate VM or container and communicate with edx-platform using REST API.",SettingToggle,"[21, 21, 21, 21, 21, 21]",xmodule/capa/safe_exec/remote_exec.py,,,https://github.com/openedx/edx-platform/blob/master/xmodule/capa/safe_exec/remote_exec.py#L21-L21,['open_edx'],
+ENABLE_COMPREHENSIVE_THEMING,lms,ENABLE_COMPREHENSIVE_THEMING,django_settings,True,,,True,True,True,,,,,2016-06-30,False,"When enabled, this toggle activates the use of the custom theme
+   defined by DEFAULT_SITE_THEME.",DjangoSetting,"[4472, 4472, 4472, 4472, 4472, 4472]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L4472-L4472,['open_edx'],
+ENABLE_COPPA_COMPLIANCE,lms,ENABLE_COPPA_COMPLIANCE,django_settings,True,,,True,True,,,,,,2021-10-27,False,"When True, inforces COPPA compliance and removes YOB field from registration form and accounnt",DjangoSetting,"[1072, 1072, 1072, 1072, 1072, 1072, 1072]",lms/envs/common.py,,'https://openedx.atlassian.net/browse/VAN-622',https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L1072-L1072,['open_edx'],
+ENABLE_CREDIT_ELIGIBILITY,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENABLE_DEMOGRAPHICS_COLLECTION,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENABLE_DYNAMIC_REGISTRATION_FIELDS,lms,ENABLE_DYNAMIC_REGISTRATION_FIELDS,django_settings,,,,,True,,,,,,2022-04-21,False,"When enabled, this toggle adds fields configured in",DjangoSetting,"[4963, 4963, 4963, 4963, 4963, 4963, 4963, 4963]",lms/envs/common.py,None,https://openedx.atlassian.net/browse/VAN-838,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L4963-L4963,['temporary'],
+ENABLE_JASMINE,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENABLE_MFE_CONFIG_API,lms,ENABLE_MFE_CONFIG_API,django_settings,,,,,False,,,,,,2022-05-20,False,"Set to True to enable MFE Config API. This is disabled by
+   default.",DjangoSetting,"[5207, 5207, 5207, 5207, 5207, 5207, 5207, 5207]",lms/envs/common.py,None,None,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L5207-L5207,['open_edx'],
+ENABLE_MULTICOURSE,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENABLE_ORA_MOBILE_SUPPORT,lms,,waffle_flags,,,,,,on,,2020-12-04 15:46:13,,2020-12-02 18:27:44,,,,,,,,,,,
+ENABLE_REQUIRE_THIRD_PARTY_AUTH,lms,ENABLE_REQUIRE_THIRD_PARTY_AUTH,django_settings,True,,,False,False,,,,,,2020-09-16,False,"Set to True to prevent using username/password login and registration and only allow
+   authentication with third party auth",DjangoSetting,"[11, 11, 11, 11, 11, 11, 11]",openedx/core/djangoapps/user_authn/toggles.py,,,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/user_authn/toggles.py#L11-L11,['open_edx'],Requires configuration of third party auth
+ENABLE_SAVE_FOR_LATER,lms,,django_settings,False,,,False,True,True,,,,,,,,,,,,,,,
+ENFORCE_SAFE_SESSIONS,lms,ENFORCE_SAFE_SESSIONS,django_settings,True,SettingToggle,,True,True,True,,,,,2021-12-01,True,"Invalidate session and response if mismatch detected.
+   That is, when the `user` attribute of the request object gets changed or
+   no longer matches the session, the session will be invalidated and the
+   response cancelled (changed to an error). This is intended as a backup
+   safety measure in case an attacker (or bug) is able to change the user
+   on a session in an unexpected way.",SettingToggle,"[136, 136, 136, 136, 136, 136, 136, 136]",openedx/core/djangoapps/safe_sessions/middleware.py,,https://openedx.atlassian.net/browse/ARCHBOM-1861,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/safe_sessions/middleware.py#L136-L136,['opt_out'],"Should be disabled if debugging mismatches using the
+   LOG_REQUEST_USER_CHANGE_HEADERS toggle, otherwise series of mismatching
+   requests from the same user cannot be investigated.  Additionally, if
+   enabling for the first time, confirm that incidences of the string
+   ""SafeCookieData user at request"" in the logs are very rare; if they are
+   not, it is likely that there is either a bug or that a login or
+   registration endpoint needs to call ``mark_user_change_as_expected``."
+ENV_FEATURES['ALLOW_COURSE_RERUNS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ALLOW_COURSE_STAFF_GRADE_DOWNLOADS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['CERTIFICATES_HTML_VIEW'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['CERTIFICATES_INSTRUCTOR_GENERATION'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['CUSTOM_CERTIFICATE_TEMPLATES_ENABLED'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['CUSTOM_COURSES_EDX'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['DISABLE_AUDIT_CERTIFICATES'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['DISABLE_COURSE_CREATION'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['DISABLE_HONOR_CERTIFICATES'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['DISABLE_LIBRARY_CREATION'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['DISABLE_MOBILE_COURSE_AVAILABLE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['DISPLAY_ANALYTICS_DEMOGRAPHICS'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['DISPLAY_ANALYTICS_ENROLLMENTS'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['EDITABLE_SHORT_DESCRIPTION'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['EMBARGO'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_ANALYTICS_ACTIVE_COUNT'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_API_DOCS'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_ASYNC_ANSWER_DISTRIBUTION'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_AUTHN_MICROFRONTEND'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_CERTIFICATES_IDV_REQUIREMENT'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_COACHING'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_COMBINED_LOGIN_REGISTRATION'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_CORS_HEADERS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_COUNTRY_ACCESS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_COURSEWARE_SEARCH_FOR_COURSE_STAFF'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_COURSE_ASSESSMENT_GRADE_CHANGE_SIGNAL'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_COURSE_OLX_VALIDATION'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_CREATOR_GROUP'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_CREDIT_API'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_CREDIT_ELIGIBILITY'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_CROSS_DOMAIN_CSRF_COOKIE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_CSMH_EXTENDED'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_DEBUG_RUN_PYTHON'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_DISCUSSION_HOME_PANEL'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_DISCUSSION_SERVICE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_EDXNOTES'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_ENTERPRISE_INTEGRATION'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_FEEDBACK_SUBMISSION'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_FINANCIAL_ASSISTANCE_FORM'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_FOOTER_MOBILE_APP_LINKS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_FORUM_DAILY_DIGEST'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_GRADE_DOWNLOADS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_INSTRUCTOR_ANALYTICS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_INSTRUCTOR_BETA_DASHBOARD'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_INSTRUCTOR_LEGACY_DASHBOARD'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_INTEGRITY_SIGNATURE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_MAX_FAILED_LOGIN_ATTEMPTS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_MKTG_EMAIL_OPT_IN'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_MKTG_SITE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_MOBILE_REST_API'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_NEW_BULK_EMAIL_EXPERIENCE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_OAUTH2_PROVIDER'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_ORA_MOBILE_SUPPORT'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_ORA_USERNAMES_ON_DATA_EXPORT'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_PROCTORED_EXAMS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_PUBLISHER'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_READING_FROM_MULTIPLE_HISTORY_TABLES'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_SERVICE_STATUS'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_SPECIAL_EXAMS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_THIRD_PARTY_AUTH'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_V2_CERT_DISPLAY_SETTINGS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_VERIFIED_CERTIFICATES'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_VIDEO_ABSTRACTION_LAYER_API'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_VIDEO_BUMPER'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_VIDEO_UPLOAD_PIPELINE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['ENABLE_XBLOCK_VIEW_ENDPOINT'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['IS_EDX_DOMAIN'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['LICENSING'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['LTI_1P3_ENABLED'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['MILESTONES_APP'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['NOTICES_ENABLE_MOBILE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['PREVENT_CONCURRENT_LOGINS'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_FEATURES['SEPARATE_VERIFICATION_FROM_PAYMENT'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['SHOW_FOOTER_LANGUAGE_SELECTOR'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_FEATURES['SQUELCH_PII_IN_LOGS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['AWS_QUERYSTRING_AUTH'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_TOKENS['BULK_EMAIL_LOG_SENT_EMAILS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['CELERY_BROKER_USE_SSL'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_TOKENS['CSRF_COOKIE_SECURE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['EMAIL_USE_COURSE_ID_FROM_FOR_BULK'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['EMAIL_USE_TLS'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+ENV_TOKENS['ENABLE_AUTHN_LOGIN_BLOCK_HIBP_POLICY'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['ENABLE_AUTHN_LOGIN_NUDGE_HIBP_POLICY'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['ENABLE_AUTHN_REGISTER_HIBP_POLICY'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['ENABLE_AUTHN_RESET_PASSWORD_HIBP_POLICY'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['ENABLE_COMPREHENSIVE_THEMING'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['ENABLE_COPPA_COMPLIANCE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['ENABLE_DEMOGRAPHICS_COLLECTION'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['ENABLE_DYNAMIC_REGISTRATION_FIELDS'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['ENABLE_SAVE_FOR_LATER'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['LOG_REQUEST_USER_CHANGES'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['LTI_NRPS_DISALLOW_PII'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['MARKETING_EMAILS_OPT_IN'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['SESSION_COOKIE_SECURE'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ENV_TOKENS['SHOW_ACCOUNT_ACTIVATION_CTA'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+EVENT_TRACKING_ENABLED,lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+EXPECTED_ERRORS[N]['IS_IGNORED'],lms,EXPECTED_ERRORS[N]['IS_IGNORED'],django_settings,,,,,,,,,,,2021-03-11,True,"Set this to False if the errors are not ignored by monitoring, but only expected, like
+      for temporary problems that may take some time to fix. If True, adds the custom attributes
+      ``error_ignored_class`` and ``error_ignored_message`` to help diagnose issues with ignored errors, since
+      this data is not otherwise available. For example of ignoring errors in New Relic, see:
+      https://docs.newrelic.com/docs/agents/manage-apm-agents/agent-data/manage-errors-apm-collect-ignore-or-mark-expected/#ignore  pylint: disable=line-too-long,useless-suppression
+      To query for ignored errors, you would use ``error_ignored_class IS NOT NULL``.
+      Note: This is defaulted to True because it will be easier for us to detect if True is not the correct value, by
+      seeing that these errors aren't actually ignored.",DjangoSetting,"[147, 147, 147, 147, 147, 147, 147]",openedx/core/lib/request_utils.py,,,https://github.com/openedx/edx-platform/blob/master/openedx/core/lib/request_utils.py#L147-L147,['opt_out'],"At this time, this toggle does not actually configure the error to be ignored. It is meant to match
+     the ignored error configuration found elsewhere. When monitoring, no errors should ever have the attribute
+     ``error_ignored_class``. Only Transactions should have this custom attribute. If found for an error, it means we
+     are stating an error should be ignored when it is not actually configured as such, or the configuration is not
+     working."
+EXPECTED_ERRORS[N]['LOG_ERROR'],lms,EXPECTED_ERRORS[N]['LOG_ERROR'],django_settings,,,,,,,,,,,2021-03-11,False,"If True, the error will be logged with a message like: ""Expected error ..."".",DjangoSetting,"[166, 166, 166, 166, 166, 166]",openedx/core/lib/request_utils.py,,,https://github.com/openedx/edx-platform/blob/master/openedx/core/lib/request_utils.py#L166-L166,['opt_in'],
+EXPECTED_ERRORS[N]['LOG_STACK_TRACE'],lms,EXPECTED_ERRORS[N]['LOG_STACK_TRACE'],django_settings,,,,,,,,,,,2021-03-11,False,"If True, the stacktrace will be included with the logging message.",DjangoSetting,"[173, 173, 173, 173, 173, 173, 173]",openedx/core/lib/request_utils.py,,,https://github.com/openedx/edx-platform/blob/master/openedx/core/lib/request_utils.py#L173-L173,['opt_in'],"Requires ``LOG_ERROR`` to be set to True, otherwise this value will be ignored."
+FEATURES['ALLOW_ADMIN_ENTERPRISE_COURSE_ENROLLMENT_DELETION'],lms,FEATURES['ALLOW_ADMIN_ENTERPRISE_COURSE_ENROLLMENT_DELETION'],django_settings,True,,,False,False,False,,,,,2021-01-27,False,"If true, allows for the deletion of EnterpriseCourseEnrollment records via Django Admin.",DjangoSetting,"[932, 932, 932, 932, 932, 932, 932]",lms/envs/common.py,,https://openedx.atlassian.net/browse/ENT-4022,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L932-L932,['opt_in'],
+FEATURES['ALLOW_AUTOMATED_SIGNUPS'],lms,FEATURES['ALLOW_AUTOMATED_SIGNUPS'],django_settings,True,,,False,False,False,,,,,2014-10-21,False,"Enable to show a section in the membership tab of the instructor
+   dashboard to allow an upload of a CSV file that contains a list of new accounts to create
+   and register for course.",DjangoSetting,"[63, 63, 63, 63, 63, 63, 63]",lms/djangoapps/instructor/settings/common.py,,https://github.com/openedx/edx-platform/pull/5670,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/instructor/settings/common.py#L63-L63,['opt_in'],
+FEATURES['ALLOW_COURSE_RERUNS'],lms,FEATURES['ALLOW_COURSE_RERUNS'],django_settings,True,,,True,True,True,,,,,2015-02-13,True,"This will allow staff member to re-run the course from the studio home page and will
+   always use the split modulestore. When this is set to False, the Re-run Course link will not be available on
+   the studio home page.",DjangoSetting,"[299, 299, 299, 299, 299, 299, 299]",cms/envs/common.py,,https://github.com/openedx/edx-platform/pull/6965,https://github.com/openedx/edx-platform/blob/master/cms/envs/common.py#L299-L299,['open_edx'],
+FEATURES['ALLOW_COURSE_STAFF_GRADE_DOWNLOADS'],lms,FEATURES['ALLOW_COURSE_STAFF_GRADE_DOWNLOADS'],django_settings,True,,,True,True,True,,,,,2018-03-26,False,"Enable to give course staff unrestricted access to grade downloads;
+   if set to False, only edX superusers can perform the downloads.",DjangoSetting,"[53, 53, 53, 53, 53, 53, 53]",lms/djangoapps/instructor/settings/common.py,,https://github.com/openedx/edx-platform/pull/1750,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/instructor/settings/common.py#L53-L53,['opt_in'],
+FEATURES['ALLOW_EMAIL_ADDRESS_CHANGE'],lms,FEATURES['ALLOW_EMAIL_ADDRESS_CHANGE'],django_settings,True,,,True,True,True,,,,,2017-06-26,True,"Allow users to change their email address on the Account Settings page. If this is
+   disabled, users will not be able to change their email address.",DjangoSetting,"[797, 797, 797, 797, 797, 797, 797]",lms/envs/common.py,,https://openedx.atlassian.net/browse/OSPR-1735,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L797-L797,['open_edx'],
+FEATURES['ALLOW_HIDING_DISCUSSION_TAB'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['ALLOW_PUBLIC_ACCOUNT_CREATION'],lms,FEATURES['ALLOW_PUBLIC_ACCOUNT_CREATION'],django_settings,True,,,True,True,True,,,,,2017-04-12,True,"Allow public account creation. If this is disabled, users will no longer have access to
+   the signup page.",DjangoSetting,"[770, 770, 770, 770, 770, 770, 770]",lms/envs/common.py,,https://openedx.atlassian.net/browse/YONK-513,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L770-L770,['open_edx'],
+FEATURES['ALLOW_WIKI_ROOT_ACCESS'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['ALWAYS_REDIRECT_HOMEPAGE_TO_DASHBOARD_FOR_AUTHENTICATED_USER'],lms,FEATURES['ALWAYS_REDIRECT_HOMEPAGE_TO_DASHBOARD_FOR_AUTHENTICATED_USER'],django_settings,True,,,True,True,True,,,,,2014-09-16,True,"When a logged in user goes to the homepage ('/') the user will be redirected to the
+   dashboard page when this flag is set to True - this is default Open edX behavior. Set to False to not redirect
+   the user.",DjangoSetting,"[482, 482, 482, 482, 482, 482, 482]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/5220,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L482-L482,['open_edx'],
+FEATURES['AUTOMATIC_AUTH_FOR_TESTING'],lms,FEATURES['AUTOMATIC_AUTH_FOR_TESTING'],django_settings,True,,,False,False,False,,,,,2013-07-25,False,"Set to True to perform acceptance and load test. Auto auth view is responsible for load
+   testing and is controlled by this feature flag. Auto-auth causes issues in Bok Choy tests because it resets the
+   requesting user. Session verification (of CacheBackedAuthenticationMiddleware) is a security feature, but it
+   can be turned off by enabling this feature flag.",DjangoSetting,"[342, 342, 342, 342, 342, 342, 342, 342]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/417,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L342-L342,['open_edx'],If this has been set to True then the account activation email will be skipped.
+FEATURES['AUTOMATIC_VERIFY_STUDENT_IDENTITY_FOR_TESTING'],lms,FEATURES['AUTOMATIC_VERIFY_STUDENT_IDENTITY_FOR_TESTING'],django_settings,True,,,False,False,False,,,,,2013-10-03,False,"If set to True, then we want to skip posting anything to Software Secure. Bypass posting
+   anything to Software Secure if the auto verify feature for testing is enabled. We actually don't even create
+   the message because that would require encryption and message signing that rely on settings.VERIFY_STUDENT
+   values that aren't set in dev. So we just pretend like we successfully posted and automatically approve student
+   identity verification attempts.",DjangoSetting,"[397, 397, 397, 397, 397, 397, 397]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/1184,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L397-L397,['open_edx'],
+FEATURES['AUTOPLAY_VIDEOS'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['BATCH_ENROLLMENT_NOTIFY_USERS_DEFAULT'],lms,FEATURES['BATCH_ENROLLMENT_NOTIFY_USERS_DEFAULT'],django_settings,True,,,True,True,True,,,,,2017-07-05,True,"Controls if the ""Notify users by email"" checkbox in the batch
+   enrollment form on the instructor dashboard is already checked on page load or not.",DjangoSetting,"[95, 95, 95, 95, 95, 95, 95]",lms/djangoapps/instructor/settings/common.py,,https://github.com/openedx/edx-platform/pull/15392,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/instructor/settings/common.py#L95-L95,['opt_out'],
+FEATURES['CERTIFICATES_HTML_VIEW'],lms,FEATURES['CERTIFICATES_HTML_VIEW'],django_settings,False,,,False,True,True,,,,,2015-03-13,False,Set to True to enable course certificates on your instance of Open edX.,DjangoSetting,"[625, 625, 625, 625, 625, 625, 625, 625, 625]",lms/envs/common.py,None,https://github.com/openedx/edx-platform/pull/7113,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L625-L625,['open_edx'],"You must enable this feature flag in both Studio and the LMS and complete the configuration tasks
+   described here:
+   https://edx.readthedocs.io/projects/edx-installing-configuring-and-running/en/latest/configuration/enable_certificates.html  pylint: disable=line-too-long,useless-suppression"
+FEATURES['CERTIFICATES_INSTRUCTOR_GENERATION'],lms,,django_settings,False,,,False,True,True,,,,,,,,,,,,,,,
+"FEATURES['CERTIFICATES_INSTRUCTOR_GENERATION']  # lint-amnesty, pylint: disable=annotation-missing-token",lms,"FEATURES['CERTIFICATES_INSTRUCTOR_GENERATION']  # lint-amnesty, pylint: disable=annotation-missing-token",django_settings,,,,,,,,,,,,False,"Enable to allow batch generation of certificates from the instructor dashboard.
+   In case of self-paced courses, the certificate generation button is hidden if certificate
+   generation is not explicitly enabled globally or for the specific course.",DjangoSetting,"[86, 86, 86, 86, 86]",lms/djangoapps/instructor/settings/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/instructor/settings/common.py#L86-L86,['opt_in'],
+FEATURES['COURSES_ARE_BROWSABLE'],lms,FEATURES['COURSES_ARE_BROWSABLE'],django_settings,False,,,False,True,True,,,,,2013-09-28,True,"When this is set to True, all the courses will be listed on the /courses page and Explore
+   Courses link will be visible. Set to False if courses list and Explore Courses link need to be hidden.",DjangoSetting,"[246, 246, 246, 246, 246, 246, 246, 246]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/1073,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L246-L246,['open_edx'],This Effects views and templates.
+FEATURES['CUSTOM_CERTIFICATE_TEMPLATES_ENABLED'],lms,FEATURES['CUSTOM_CERTIFICATE_TEMPLATES_ENABLED'],django_settings,False,,,False,True,True,,,,,2015-08-13,False,Set to True to enable custom certificate templates which are configured via Django admin.,DjangoSetting,"[638, 638, 638, 638, 638, 638, 638, 638, 638]",lms/envs/common.py,None,https://openedx.atlassian.net/browse/SOL-1044,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L638-L638,['open_edx'],None
+FEATURES['CUSTOM_COURSES_EDX'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['DEPRECATE_OLD_COURSE_KEYS_IN_STUDIO'],lms,FEATURES['DEPRECATE_OLD_COURSE_KEYS_IN_STUDIO'],django_settings,,,,,,,,,,,2020-06-12,True,"Warn about removing support for deprecated course keys.
+      To enable, set to True.
+      To disable, set to False.
+      To enable with a custom support deadline, set to an ISO-8601 date string:
+        eg: '2020-09-01'",DjangoSetting,"[422, 422, 422, 422, 422, 422, 422, 422, 422]",cms/envs/common.py,2021-04-01,https://openedx.atlassian.net/browse/DEPR-58,https://github.com/openedx/edx-platform/blob/master/cms/envs/common.py#L422-L422,['temporary'],"This can be removed once support is removed for deprecated
+   course keys."
+FEATURES['DISABLE_ALLOWED_ENROLLMENT_IF_ENROLLMENT_CLOSED'],lms,FEATURES['DISABLE_ALLOWED_ENROLLMENT_IF_ENROLLMENT_CLOSED'],django_settings,True,,,False,False,False,,,,,2022-06-06,False,Set to True to disable enrollment for user invited to a course,DjangoSetting,"[1022, 1022, 1022, 1022, 1022, 1022, 1022]",lms/envs/common.py,,'https://github.com/edx/edx-platform/pull/29538',https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L1022-L1022,['open_edx'],
+FEATURES['DISABLE_AUDIT_CERTIFICATES'],lms,,django_settings,False,,,False,True,True,,,,,,,,,,,,,,,
+FEATURES['DISABLE_COURSE_CREATION'],lms,FEATURES['DISABLE_COURSE_CREATION'],django_settings,True,,,,True,True,,,,,2013-12-02,False,"If set to True, it disables the course creation functionality and hides the ""New Course""
+   button in studio.
+   It is important to note that the value of this flag only affects if the user doesn't have a staff role,
+   otherwise the course creation functionality will work as it should.",DjangoSetting,"[450, 450, 450, 450, 450, 450, 450]",cms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/cms/envs/common.py#L450-L450,['open_edx'],"Another toggle DISABLE_LIBRARY_CREATION overrides DISABLE_COURSE_CREATION, if present."
+FEATURES['DISABLE_HONOR_CERTIFICATES'],lms,FEATURES['DISABLE_HONOR_CERTIFICATES'],django_settings,False,,,False,True,True,,,,,2019-05-14,False,"Set to True to disable honor certificates. Typically used when your installation only
+   allows verified certificates, like courses.edx.org.",DjangoSetting,"[330, 330, 330, 330, 330, 330, 330]",lms/envs/common.py,,https://openedx.atlassian.net/browse/PROD-269,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L330-L330,['open_edx'],
+FEATURES['DISABLE_LIBRARY_CREATION'],lms,,django_settings,True,,,,False,False,,,,,,,,,,,,,,,
+FEATURES['DISABLE_LOGIN_BUTTON'],lms,FEATURES['DISABLE_LOGIN_BUTTON'],django_settings,True,,,False,False,False,,,,,2013-12-03,False,"Removes the display of the login button in the navigation bar.
+   Change is only at the UI level. Used in systems where login is automatic, eg MIT SSL",DjangoSetting,"[211, 211, 211, 211, 211, 211]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L211-L211,['open_edx'],
+FEATURES['DISABLE_MOBILE_COURSE_AVAILABLE'],lms,FEATURES['DISABLE_MOBILE_COURSE_AVAILABLE'],django_settings,False,,,False,True,True,,,,,2020-02-14,False,"Set to True to remove Mobile Course Available UI Flag from Studio's Advanced Settings
+   page else Mobile Course Available UI Flag will be available on Studio side.",DjangoSetting,"[376, 376, 376, 376, 376, 376, 376]",cms/envs/common.py,,https://github.com/openedx/edx-platform/pull/23073,https://github.com/openedx/edx-platform/blob/master/cms/envs/common.py#L376-L376,['open_edx'],
+FEATURES['DISABLE_START_DATES'],lms,FEATURES['DISABLE_START_DATES'],django_settings,True,,,False,False,False,,,,,2012-07-24,False,"When True, all courses will be active, regardless of start
+   date.",DjangoSetting,"[117, 117, 117, 117, 117, 117, 117, 117]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/17913,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L117-L117,['open_edx'],This will cause ALL courses to be immediately visible.
+FEATURES['DISABLE_UNENROLLMENT'],lms,FEATURES['DISABLE_UNENROLLMENT'],django_settings,True,,,False,False,False,,,,,2021-10-11,False,"Set to True to disable self-unenrollments via REST API.
+   This also hides the ""Unenroll"" button on the Learner Dashboard.",DjangoSetting,"[1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]",lms/envs/common.py,,'https://github.com/open-craft/edx-platform/pull/429',https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L1000-L1000,['open_edx'],"For consistency in user experience, keep the value in sync with the setting of the same name
+   in the LMS and CMS."
+FEATURES['DISPLAY_ANALYTICS_DEMOGRAPHICS'],lms,,django_settings,True,,,,False,False,,,,,,,,,,,,,,,
+FEATURES['DISPLAY_ANALYTICS_ENROLLMENTS'],lms,FEATURES['DISPLAY_ANALYTICS_ENROLLMENTS'],django_settings,True,,,False,False,False,,,,,2014-11-12,True,"Enable display of enrollment counts in instructor dashboard and
+   analytics section.",DjangoSetting,"[13, 13, 13, 13, 13, 13, 13]",lms/djangoapps/instructor/settings/common.py,,https://github.com/openedx/edx-platform/pull/5838,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/instructor/settings/common.py#L13-L13,['opt_out'],
+FEATURES['DISPLAY_DEBUG_INFO_TO_STAFF'],lms,FEATURES['DISPLAY_DEBUG_INFO_TO_STAFF'],django_settings,True,,,True,True,True,,,,,2015-09-04,True,"Add a ""Staff Debug"" button to course modules for debugging
+   by course staff.",DjangoSetting,"[94, 94, 94, 94, 94, 94, 94]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/2425,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L94-L94,['open_edx'],
+FEATURES['DISPLAY_HISTOGRAMS_TO_STAFF'],lms,FEATURES['DISPLAY_HISTOGRAMS_TO_STAFF'],django_settings,True,,,False,False,False,,,,,2014-02-13,False,This displays histograms in the Staff Debug Info panel to course staff.,DjangoSetting,"[104, 104, 104, 104, 104, 104, 104, 104]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/2425,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L104-L104,['open_edx'],"Generating histograms requires scanning the courseware_studentmodule table on each view. This
+   can make staff access to courseware very slow on large courses."
+FEATURES['EDITABLE_SHORT_DESCRIPTION'],lms,FEATURES['EDITABLE_SHORT_DESCRIPTION'],django_settings,True,,,False,False,False,,,,,2014-02-13,True,"This feature flag allows editing of short descriptions on the Schedule & Details page in
+   Open edX Studio. Set to False if you want to disable the editing of the course short description.",DjangoSetting,"[221, 221, 221, 221, 221, 221, 221]",cms/envs/common.py,,https://github.com/openedx/edx-platform/pull/2334,https://github.com/openedx/edx-platform/blob/master/cms/envs/common.py#L221-L221,['open_edx'],
+FEATURES['EMBARGO'],lms,FEATURES['EMBARGO'],django_settings,True,,,True,True,True,,,,,2014-02-27,False,"Turns on embargo functionality, which blocks users from
+   the site or courses based on their location. Embargo can restrict users by states
+   and whitelist/blacklist (IP Addresses (ie. 10.0.0.0), Networks (ie. 10.0.0.0/24)), or the user profile country.",DjangoSetting,"[439, 439, 439, 439, 439, 439, 439, 439, 439]",lms/envs/common.py,None,https://github.com/openedx/edx-platform/pull/2749,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L439-L439,['open_edx'],"reverse proxy should be configured appropriately for example Client IP address headers
+   (e.g HTTP_X_FORWARDED_FOR) should be configured."
+FEATURES['ENABLE_ACCOUNT_DELETION'],lms,FEATURES['ENABLE_ACCOUNT_DELETION'],django_settings,True,,,True,True,True,,,,,2018-06-01,True,"Whether to display the account deletion section on Account Settings page. Set to False to
+   hide this section.",DjangoSetting,"[847, 847, 847, 847, 847, 847, 847]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/18298,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L847-L847,['open_edx'],
+FEATURES['ENABLE_ANALYTICS_ACTIVE_COUNT'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_ANNOUNCEMENTS'],lms,FEATURES['ENABLE_ANNOUNCEMENTS'],django_settings,True,,,False,False,False,,,,,2017-11-08,False,"This feature can be enabled to show system wide announcements
+       on the sidebar of the learner dashboard. Announcements can be created by Global Staff
+       users on maintenance dashboard of studio. Maintenance dashboard can accessed at
+       https://{studio.domain}/maintenance",SettingDictToggle,"[5, 5, 5, 5, 5, 5, 5, 5]",openedx/features/announcements/settings/common.py,,https://github.com/openedx/edx-platform/pull/16496,https://github.com/openedx/edx-platform/blob/master/openedx/features/announcements/settings/common.py#L5-L5,['open_edx'],TinyMCE is needed to show an editor in the studio.
+FEATURES['ENABLE_API_DOCS'],lms,,django_settings,False,,,,False,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_ASYNC_ANSWER_DISTRIBUTION'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_AUTHN_MICROFRONTEND'],lms,FEATURES['ENABLE_AUTHN_MICROFRONTEND'],django_settings,True,,,True,True,True,,,,,2020-09-08,False,Supports staged rollout of a new micro-frontend-based implementation of the logistration.,DjangoSetting,"[871, 871, 871, 871, 871, 871, 871, 871, 871]",lms/envs/common.py,None,'https://github.com/openedx/edx-platform/pull/24908',https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L871-L871,"['temporary', 'open_edx']","Also set settings.AUTHN_MICROFRONTEND_URL for rollout. This temporary feature
+   toggle does not have a target removal date."
+FEATURES['ENABLE_AUTOADVANCE_VIDEOS'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['ENABLE_AUTOMATED_SIGNUPS_EXTRA_FIELDS'],lms,FEATURES['ENABLE_AUTOMATED_SIGNUPS_EXTRA_FIELDS'],django_settings,True,,,False,False,False,,,,,2021-10-26,False,"When True, the CSV file that contains a list of
+   new accounts to create and register for a course in the membership
+   tab of the instructor dashboard will accept the cohort name to
+   assign the new user and the enrollment course mode.",DjangoSetting,"[74, 74, 74, 74, 74, 74, 74]",lms/djangoapps/instructor/settings/common.py,,https://github.com/openedx/edx-platform/pull/21260,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/instructor/settings/common.py#L74-L74,['open_edx'],
+FEATURES['ENABLE_BULK_ENROLLMENT_VIEW'],lms,FEATURES['ENABLE_BULK_ENROLLMENT_VIEW'],django_settings,True,,,False,False,False,,,,,2017-07-15,False,"When set to True the bulk enrollment view is enabled and one can use it to enroll multiple
+   users in a course using bulk enrollment API endpoint (/api/bulk_enroll/v1/bulk_enroll).",DjangoSetting,"[807, 807, 807, 807, 807, 807, 807]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/15006,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L807-L807,['open_edx'],
+FEATURES['ENABLE_BULK_USER_RETIREMENT'],lms,FEATURES['ENABLE_BULK_USER_RETIREMENT'],django_settings,True,,,False,False,False,,,,,2021-03-11,False,"Set to True to enable bulk user retirement through REST API. This is disabled by
+   default.",DjangoSetting,"[941, 941, 941, 941, 941, 941, 941, 941, 941]",lms/envs/common.py,None,'https://openedx.atlassian.net/browse/OSPR-5290',https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L941-L941,['open_edx'],None
+FEATURES['ENABLE_CCX_ANALYTICS_DASHBOARD_URL'],lms,FEATURES['ENABLE_CCX_ANALYTICS_DASHBOARD_URL'],django_settings,True,,,False,False,False,,,,,2016-10-07,False,"Display the 'Analytics' tab in the instructor dashboard for CCX courses.
+   Note: This has no effect unless ANALYTICS_DASHBOARD_URL is already set, because without that
+   setting, the tab does not show up for any courses.",DjangoSetting,"[23, 23, 23, 23, 23, 23, 23]",lms/djangoapps/instructor/settings/common.py,,https://github.com/openedx/edx-platform/pull/13196,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/instructor/settings/common.py#L23-L23,['opt_in'],
+FEATURES['ENABLE_CERTIFICATES_IDV_REQUIREMENT'],lms,FEATURES['ENABLE_CERTIFICATES_IDV_REQUIREMENT'],django_settings,True,,,False,False,False,,,,,2022-04-26,False,Whether to enforce ID Verification requirements for couse certificates generation,DjangoSetting,"[1012, 1012, 1012, 1012, 1012, 1012, 1012, 1012]",lms/envs/common.py,None,'https://openedx.atlassian.net/browse/MST-1458',https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L1012-L1012,['open_edx'],
+FEATURES['ENABLE_CHANGE_USER_PASSWORD_ADMIN'],lms,FEATURES['ENABLE_CHANGE_USER_PASSWORD_ADMIN'],django_settings,True,,,False,False,False,,,,,2020-02-21,False,"Set to True to enable changing a user password through django admin. This is disabled by
+   default because enabling allows a method to bypass password policy.",DjangoSetting,"[861, 861, 861, 861, 861, 861, 861]",lms/envs/common.py,,'https://github.com/openedx/edx-platform/pull/21616',https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L861-L861,['open_edx'],
+FEATURES['ENABLE_COACHING'],lms,,django_settings,False,,,,False,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_COMBINED_LOGIN_REGISTRATION'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_COMBINED_LOGIN_REGISTRATION_FOOTER'],lms,FEATURES['ENABLE_COMBINED_LOGIN_REGISTRATION_FOOTER'],django_settings,True,,,False,False,False,,,,,2016-06-24,False,"Display the standard footer in the login page. This feature can be overridden by a site-
+   specific configuration.",DjangoSetting,"[518, 518, 518, 518, 518, 518, 518]",lms/envs/common.py,,https://openedx.atlassian.net/browse/OSPR-1320,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L518-L518,['open_edx'],
+FEATURES['ENABLE_CONTENT_LIBRARIES_LTI_TOOL'],lms,FEATURES['ENABLE_CONTENT_LIBRARIES_LTI_TOOL'],django_settings,,,,,,,,,,,2021-08-17,False,"When set to True, Content Libraries in
+    Studio can be used as an LTI 1.3 tool by external LTI platforms.",DjangoSetting,"[268, 268, 268, 268, 268, 268, 268]",cms/envs/common.py,,https://github.com/openedx/edx-platform/pull/27411,https://github.com/openedx/edx-platform/blob/master/cms/envs/common.py#L268-L268,['open_edx'],
+FEATURES['ENABLE_COOKIE_CONSENT'],lms,FEATURES['ENABLE_COOKIE_CONSENT'],django_settings,True,,,False,False,False,,,,,2017-03-03,False,"Enable header banner for cookie consent using this service:
+   https://cookieconsent.insites.com/",DjangoSetting,"[780, 780, 780, 780, 780, 780, 780]",lms/envs/common.py,,https://openedx.atlassian.net/browse/OSPR-1560,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L780-L780,['open_edx'],
+FEATURES['ENABLE_CORS_HEADERS'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_COSMETIC_DISPLAY_PRICE'],lms,FEATURES['ENABLE_COSMETIC_DISPLAY_PRICE'],django_settings,True,,,False,False,False,,,,,2014-10-10,False,"Enable the display of ""cosmetic_display_price"", set in a course advanced settings. This
+   cosmetic price is used when there is no registration price associated to the course.",DjangoSetting,"[386, 386, 386, 386, 386, 386, 386, 386]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/6876,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L386-L386,['open_edx'],The use case of this feature toggle is uncertain.
+FEATURES['ENABLE_COUNTRY_ACCESS'],lms,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_COURSEWARE_SEARCH'],lms,FEATURES['ENABLE_COURSEWARE_SEARCH'],django_settings,True,,,False,False,False,,,,,2015-01-29,False,"When enabled, this adds a Search the course widget on the course outline and courseware
+   pages for searching courseware data.",DjangoSetting,"[574, 574, 574, 574, 574, 574, 574, 574]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/6506,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L574-L574,['open_edx'],"In order to get this working, your courses data should be indexed in Elasticsearch. You will
+   see the search widget on the courseware page only if the DISABLE_COURSE_OUTLINE_PAGE_FLAG is set."
+FEATURES['ENABLE_COURSEWARE_SEARCH_FOR_COURSE_STAFF'],lms,FEATURES['ENABLE_COURSEWARE_SEARCH_FOR_COURSE_STAFF'],django_settings,True,,,True,True,True,,,,,2019-12-06,False,"When enabled, this adds a Search the course widget on the course outline and courseware
+   pages for searching courseware data but for course staff users only.",DjangoSetting,"[587, 587, 587, 587, 587, 587, 587, 587]",lms/envs/common.py,,https://openedx.atlassian.net/browse/TNL-6931,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L587-L587,['open_edx'],"In order to get this working, your courses data should be indexed in Elasticsearch. If
+   ENABLE_COURSEWARE_SEARCH is enabled then the search widget will be visible to all learners and this flag's
+   value does not matter in that case. This flag is enabled in devstack by default."
+FEATURES['ENABLE_COURSE_ASSESSMENT_GRADE_CHANGE_SIGNAL'],lms,FEATURES['ENABLE_COURSE_ASSESSMENT_GRADE_CHANGE_SIGNAL'],django_settings,False,,,False,True,False,,,,,2020-12-09,False,"Set to True to start sending signals for assessment level grade updates. Notably, the only
+   handler of this signal at the time of this writing sends assessment updates to enterprise integrated channels.",DjangoSetting,"[921, 921, 921, 921, 921, 921, 921, 921]",lms/envs/common.py,2021-02-01,https://openedx.atlassian.net/browse/ENT-3818,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L921-L921,['temporary'],
+FEATURES['ENABLE_COURSE_DISCOVERY'],lms,FEATURES['ENABLE_COURSE_DISCOVERY'],django_settings,True,,,False,False,False,,,,,2015-04-23,False,"Add a course search widget to the LMS for searching courses. When this is enabled, the
+   latest courses are no longer displayed on the LMS landing page. Also, an ""Explore Courses"" item is added to the
+   navbar.",DjangoSetting,"[649, 649, 649, 649, 649, 649, 649, 649, 649]",lms/envs/common.py,None,https://github.com/openedx/edx-platform/pull/7845,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L649-L649,['open_edx'],The COURSE_DISCOVERY_MEANINGS setting should be properly defined.
+FEATURES['ENABLE_COURSE_FILENAME_CCX_SUFFIX'],lms,FEATURES['ENABLE_COURSE_FILENAME_CCX_SUFFIX'],django_settings,True,,,False,False,False,,,,,2021-03-16,False,"If set to True, CCX ID will be included in the generated filename for CCX courses.",DjangoSetting,"[662, 662, 662, 662, 662, 662, 662, 662, 662]",lms/envs/common.py,None,None,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L662-L662,['open_edx'],Turning this feature ON will affect all generated filenames which are related to CCX courses.
+FEATURES['ENABLE_COURSE_HOME_REDIRECT'],lms,FEATURES['ENABLE_COURSE_HOME_REDIRECT'],django_settings,True,,,True,True,True,,,,,2019-01-15,True,"When enabled, along with the ENABLE_MKTG_SITE feature toggle, users who attempt to access a
+   course ""about"" page will be redirected to the course home url.",DjangoSetting,"[504, 504, 504, 504, 504, 504, 504]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/19604,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L504-L504,['open_edx'],
+FEATURES['ENABLE_COURSE_OLX_VALIDATION'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_COURSE_SORTING_BY_START_DATE'],lms,FEATURES['ENABLE_COURSE_SORTING_BY_START_DATE'],django_settings,True,,,True,True,True,,,,,2015-03-27,True,"When a user goes to the homepage ('/') the user sees the courses listed in the
+   announcement dates order - this is default Open edX behavior. Set to True to change the course sorting behavior
+   by their start dates, latest first.",DjangoSetting,"[493, 493, 493, 493, 493, 493, 493]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/7548,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L493-L493,['open_edx'],
+FEATURES['ENABLE_CREATOR_GROUP'],lms,,django_settings,False,,,True,False,False,,,,,,,,,,,,,,,
+FEATURES['ENABLE_CREDIT_API'],lms,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_CREDIT_ELIGIBILITY'],lms,FEATURES['ENABLE_CREDIT_ELIGIBILITY'],django_settings,True,,,True,True,True,,,,,2015-06-17,True,"When enabled, it is possible to define a credit eligibility criteria in the CMS. A ""Credit
+   Eligibility"" section then appears for those courses in the LMS.",DjangoSetting,"[3511, 3511, 3511, 3511, 3511, 3511, 3511]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/8550,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L3511-L3511,['open_edx'],
+FEATURES['ENABLE_CROSS_DOMAIN_CSRF_COOKIE'],lms,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_CSMH_EXTENDED'],lms,FEATURES['ENABLE_CSMH_EXTENDED'],django_settings,True,,,True,True,True,,,,,2020-11-05,True,"Write Courseware Student Module History (CSMH) to the extended table: this logs all
+   student activities to MySQL, in a separate database.",DjangoSetting,"[749, 749, 749, 749, 749, 749, 749]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L749-L749,['open_edx'],"Even though most Open edX instances run with a separate CSMH database, it may not always be
+   the case. When disabling this feature flag, remember to remove ""lms.djangoapps.coursewarehistoryextended""
+   from the INSTALLED_APPS and the ""StudentModuleHistoryExtendedRouter"" from the DATABASE_ROUTERS."
+FEATURES['ENABLE_DASHBOARD_SEARCH'],lms,FEATURES['ENABLE_DASHBOARD_SEARCH'],django_settings,True,,,False,False,False,,,,,2015-01-29,False,"When enabled, this adds a Search Your Courses widget on the dashboard page for searching
+   courseware data.",DjangoSetting,"[600, 600, 600, 600, 600, 600, 600, 600]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/6506,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L600-L600,['open_edx'],"In order to get this working, your courses data should be indexed in Elasticsearch."
+FEATURES['ENABLE_DEBUG_RUN_PYTHON'],lms,,django_settings,False,,,False,False,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_DISCUSSION_EMAIL_DIGEST'],lms,FEATURES['ENABLE_DISCUSSION_EMAIL_DIGEST'],django_settings,True,,,False,False,False,,,,,2014-08-19,False,"Set this to True if you want the discussion digest emails
+   enabled automatically for new users. This will be set on all new account
+   registrations.",DjangoSetting,"[165, 165, 165, 165, 165, 165, 165, 165, 165]",lms/envs/common.py,None,https://github.com/openedx/edx-platform/pull/4891,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L165-L165,['open_edx'],"It is not recommended to enable this feature if ENABLE_DISCUSSION_HOME_PANEL is not enabled,
+   since subscribers who receive digests in that case will only be able to unsubscribe via links embedded in
+   their emails, and they will have no way to resubscribe."
+FEATURES['ENABLE_DISCUSSION_HOME_PANEL'],lms,FEATURES['ENABLE_DISCUSSION_HOME_PANEL'],django_settings,True,,,True,True,True,,,,,2013-07-30,True,"Hides or displays a welcome panel under the Discussion tab, which includes a subscription
+   on/off setting for discussion digest emails.",DjangoSetting,"[154, 154, 154, 154, 154, 154, 154, 154]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/520,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L154-L154,['open_edx'],This should remain off in production until digest notifications are online.
+FEATURES['ENABLE_DISCUSSION_SERVICE'],lms,FEATURES['ENABLE_DISCUSSION_SERVICE'],django_settings,True,,,True,True,True,,,,,2012-08-14,True,"When True, it will enable the Discussion tab in courseware for all courses. Setting this
+   to False will not contain inline discussion components and discussion tab in any courses.",DjangoSetting,"[130, 130, 130, 130, 130, 130, 130]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L130-L130,['open_edx'],"If the discussion panel is present in the course and the value for this flag is False then,
+   attempting to expand those components will cause errors. So, this should only be set to False with an LMS that
+   is running courses that do not contain discussion components.
+   For consistency in user-experience, keep the value in sync with the setting of the same name in the CMS."
+FEATURES['ENABLE_DJANGO_ADMIN_SITE'],lms,FEATURES['ENABLE_DJANGO_ADMIN_SITE'],django_settings,True,,,True,True,True,,,,,2013-09-26,True,Set to False if you want to disable Django's admin site.,DjangoSetting,"[191, 191, 191, 191, 191, 191, 191, 191]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/829,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L191-L191,['open_edx'],It is not recommended to disable this feature as there are many settings available on
+FEATURES['ENABLE_EDXNOTES'],lms,FEATURES['ENABLE_EDXNOTES'],django_settings,True,,,True,True,True,,,,,2015-01-04,False,"This toggle enables the students to save and manage their annotations in the
+   course using the notes service. The bulk of the actual work in storing the notes is done by
+   a separate service (see the edx-notes-api repo).",SettingToggle,"[544, 544, 544, 544, 544, 544, 544, 544]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/6321,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L544-L544,['open_edx'],"Requires the edx-notes-api service properly running and to have configured the django settings
+   EDXNOTES_INTERNAL_API and EDXNOTES_PUBLIC_API. If you update this setting, also update it in Studio."
+FEATURES['ENABLE_ENROLLMENT_RESET'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['ENABLE_ENROLLMENT_TRACK_USER_PARTITION'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_ENTERPRISE_INTEGRATION'],lms,,django_settings,False,,,False,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_EXAM_SETTINGS_HTML_VIEW'],lms,FEATURES['ENABLE_EXAM_SETTINGS_HTML_VIEW'],django_settings,,,,,,,,,,,2020-07-23,False,"When enabled, users can access the new course authoring view for proctoring exams",SettingDictToggle,"[68, 68, 68, 68, 68, 68, 68]",cms/djangoapps/contentstore/toggles.py,,,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/contentstore/toggles.py#L68-L68,['open_edx'],None
+FEATURES['ENABLE_EXPORT_GIT'],lms,FEATURES['ENABLE_EXPORT_GIT'],django_settings,,,,,,True,,,,,2014-02-13,False,"When enabled, a ""Export to Git"" menu item is added to the course studio for courses that have a
+   valid ""giturl"" attribute. Exporting a course to git causes the course to be exported in the directory indicated by
+   the GIT_REPO_EXPORT_DIR setting. Note that when this feature is disabled, courses can still be exported to git with
+   the git_export management command.",SettingDictToggle,"[7, 7, 7, 7, 7, 7, 7]",cms/djangoapps/contentstore/toggles.py,,,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/contentstore/toggles.py#L7-L7,['open_edx'],"To enable this feature, the GIT_REPO_EXPORT_DIR setting must be properly defined and point to an
+   existing directory."
+FEATURES['ENABLE_FEEDBACK_SUBMISSION'],lms,,django_settings,False,,,False,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_FINANCIAL_ASSISTANCE_FORM'],lms,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_FOOTER_MOBILE_APP_LINKS'],lms,FEATURES['ENABLE_FOOTER_MOBILE_APP_LINKS'],django_settings,False,,,False,True,True,,,,,2015-01-13,False,"Set to True if you want show the mobile app links (Apple App Store & Google Play Store) in
+   the footer.",DjangoSetting,"[531, 531, 531, 531, 531, 531, 531, 531]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/6588,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L531-L531,['open_edx'],"If you set this to True then you should also set your mobile application's app store and play
+   store URLs in the MOBILE_STORE_URLS settings dictionary. These links are not part of the default theme. If you
+   want these links on your footer then you should use the edx.org theme."
+FEATURES['ENABLE_FORUM_DAILY_DIGEST'],lms,FEATURES['ENABLE_FORUM_DAILY_DIGEST'],django_settings,True,,,False,False,False,,,,,2020-03-09,True,"Settings for forums/discussions to on/off daily digest
+   feature. Set this to True if you want to enable users to subscribe and unsubscribe
+   for daily digest. This setting enables deprecation of daily digest.",DjangoSetting,"[6, 6, 6, 6, 6, 6]",lms/djangoapps/discussion/config/settings.py,,,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/discussion/config/settings.py#L6-L6,['open_edx'],
+FEATURES['ENABLE_GRADE_DOWNLOADS'],lms,FEATURES['ENABLE_GRADE_DOWNLOADS'],django_settings,True,,,True,True,True,,,,,2016-07-06,False,"Enable grade CSV downloads from the instructor dashboard. Grade
+   calculation started from the instructor dashboard will write grades CSV files to the
+   configured storage backend and give links for downloads.",DjangoSetting,"[42, 42, 42, 42, 42, 42, 42]",lms/djangoapps/instructor/settings/common.py,,https://github.com/openedx/edx-platform/pull/11286,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/instructor/settings/common.py#L42-L42,['opt_in'],
+FEATURES['ENABLE_HELP_LINK'],lms,FEATURES['ENABLE_HELP_LINK'],django_settings,True,,,True,True,True,,,,,2021-03-05,True,"When True, a help link is displayed on the main navbar. Set False to hide it.",DjangoSetting,"[258, 258, 258, 258, 258, 258, 258]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/26106,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L258-L258,['open_edx'],
+FEATURES['ENABLE_HTML_XBLOCK_STUDENT_VIEW_DATA'],lms,FEATURES['ENABLE_HTML_XBLOCK_STUDENT_VIEW_DATA'],django_settings,True,,,False,False,False,,,,,2017-08-28,False,"Whether HTML Block returns HTML content with the Course Blocks API when the API
+   is called with student_view_data=html query parameter.",DjangoSetting,"[820, 820, 820, 820, 820, 820, 820, 820]",lms/envs/common.py,,https://openedx.atlassian.net/browse/OSPR-1880,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L820-L820,['open_edx'],"Because the Course Blocks API caches its data, the cache must be cleared (e.g. by
+   re-publishing the course) for changes to this flag to take effect."
+FEATURES['ENABLE_INSTRUCTOR_ANALYTICS'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_INSTRUCTOR_BACKGROUND_TASKS'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_INSTRUCTOR_BETA_DASHBOARD'],lms,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_INSTRUCTOR_LEGACY_DASHBOARD'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['ENABLE_INTEGRITY_SIGNATURE'],lms,FEATURES['ENABLE_INTEGRITY_SIGNATURE'],django_settings,False,,,False,True,True,,,,,2022-02-15,False,Whether to display honor code agreement for learners before their first grade assignment,DjangoSetting,"[964, 964, 964, 964, 964, 964, 964, 964]",lms/envs/common.py,None,'https://openedx.atlassian.net/browse/MST-1348',https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L964-L964,['open_edx'],
+FEATURES['ENABLE_LEARNER_RECORDS'],lms,FEATURES['ENABLE_LEARNER_RECORDS'],django_settings,True,SettingDictToggle,content-aperture,True,True,True,openedx.core.djangoapps.credentials.helpers,,,,2020-10-01,True,"Enable learner records for the whole platform. This setting may be overridden by site- and
+   org-specific site configurations with the same name.",SettingDictToggle,"[9, 9, 9, 9, 9, 9, 9]",openedx/core/djangoapps/credentials/helpers.py,,,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/credentials/helpers.py#L9-L9,['open_edx'],"Enabling this feature requires that the definition of the ``CREDENTIALS_PUBLIC_SERVICE_URL``
+   setting."
+FEATURES['ENABLE_LIBRARY_AUTHORING_MICROFRONTEND'],lms,FEATURES['ENABLE_LIBRARY_AUTHORING_MICROFRONTEND'],django_settings,,,,,,,,,,,2020-06-20,False,Set to True to enable the Library Authoring MFE,DjangoSetting,"[438, 438, 438, 438, 438, 438, 438, 438, 438]",cms/envs/common.py,2020-12-31,https://openedx.atlassian.net/wiki/spaces/COMM/pages/1545011241/BD-14+Blockstore+Powered+Content+Libraries+Taxonomies,https://github.com/openedx/edx-platform/blob/master/cms/envs/common.py#L438-L438,['temporary'],"Also set settings.LIBRARY_AUTHORING_MICROFRONTEND_URL and see
+   REDIRECT_TO_LIBRARY_AUTHORING_MICROFRONTEND for rollout."
+FEATURES['ENABLE_LMS_MIGRATION'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['ENABLE_LOGIN_MICROFRONTEND'],lms,FEATURES['ENABLE_LOGIN_MICROFRONTEND'],django_settings,True,,,False,False,False,,,,,2018-05-07,False,Enable the login micro frontend.,DjangoSetting,"[367, 367, 367, 367, 367, 367, 367]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L367-L367,['open_edx'],The login MFE domain name should be listed in LOGIN_REDIRECT_WHITELIST.
+FEATURES['ENABLE_LTI_PROVIDER'],lms,FEATURES['ENABLE_LTI_PROVIDER'],django_settings,False,,,True,False,True,,,,,2015-04-24,False,"When set to True, Open edX site can be used as an LTI Provider to other systems
+    and applications.",DjangoSetting,"[710, 710, 710, 710, 710, 710, 710, 710]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/7689,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L710-L710,['open_edx'],"After enabling this feature flag there are multiple steps invloved to configure edX
+    as LTI provider. Full guide is available here:
+    https://edx.readthedocs.io/projects/edx-installing-configuring-and-running/en/latest/configuration/lti/index.html"
+FEATURES['ENABLE_MASQUERADE'],lms,FEATURES['ENABLE_MASQUERADE'],django_settings,True,,,True,True,True,,,,,2013-04-13,True,None,DjangoSetting,"[203, 203, 203, 203, 203, 203]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L203-L203,['open_edx'],
+FEATURES['ENABLE_MAX_FAILED_LOGIN_ATTEMPTS'],lms,FEATURES['ENABLE_MAX_FAILED_LOGIN_ATTEMPTS'],django_settings,True,,,True,True,True,,,,,2014-01-30,True,"This feature will keep track of the number of failed login attempts on a given user's
+   email. If the number of consecutive failed login attempts - without a successful login at some point - reaches
+   a configurable threshold (default 6), then the account will be locked for a configurable amount of seconds
+   (30 minutes) which will prevent additional login attempts until this time period has passed. If a user
+   successfully logs in, all the counter which tracks the number of failed attempts will be reset back to 0. If
+   set to False then account locking will be disabled for failed login attempts.",DjangoSetting,"[421, 421, 421, 421, 421, 421, 421]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/2331,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L421-L421,['open_edx'],
+FEATURES['ENABLE_MKTG_EMAIL_OPT_IN'],lms,,django_settings,False,,,False,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_MKTG_SITE'],lms,FEATURES['ENABLE_MKTG_SITE'],django_settings,False,,,False,True,True,,,,,2014-03-24,False,Toggle to enable alternate urls for marketing links.,DjangoSetting,"[469, 469, 469, 469, 469, 469, 469]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L469-L469,['open_edx'],"When this is enabled, the MKTG_URLS setting should be defined. The use case of this feature
+   toggle is uncertain."
+FEATURES['ENABLE_MOBILE_REST_API'],lms,,django_settings,False,,,False,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_NEW_BULK_EMAIL_EXPERIENCE'],lms,FEATURES['ENABLE_NEW_BULK_EMAIL_EXPERIENCE'],django_settings,False,,,False,True,True,,,,,2022-03-21,False,"When true, replaces the bulk email tool found on the
+   instructor dashboard with a link to the new communications MFE version instead.
+   Stting the tool to false will leave the old bulk email tool experience in place.",DjangoSetting,"[975, 975, 975, 975, 975, 975, 975, 975]",lms/envs/common.py,None,'https://openedx.atlassian.net/browse/MICROBA-1758',https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L975-L975,['opt_in'],
+FEATURES['ENABLE_OAUTH2_PROVIDER'],lms,FEATURES['ENABLE_OAUTH2_PROVIDER'],django_settings,True,,,True,True,True,,,,,2014-09-09,False,"Enable this feature to allow this Open edX platform to be an OAuth2 authentication
+   provider. This is necessary to enable some other features, such as the REST API for the mobile application.",DjangoSetting,"[220, 220, 220, 220, 220, 220, 220, 220]",lms/envs/common.py,None,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L220-L220,['temporary'],This temporary feature toggle does not have a target removal date.
+FEATURES['ENABLE_ONE_CLICK_PROGRAM_PURCHASE'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['ENABLE_OPENBADGES'],lms,FEATURES['ENABLE_OPENBADGES'],django_settings,True,,,False,False,False,,,,,2015-04-30,False,Enables support for the creation of OpenBadges as a method of awarding credentials.,DjangoSetting,"[697, 697, 697, 697, 697, 697, 697, 697]",lms/envs/common.py,,https://openedx.atlassian.net/browse/SOL-1325,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L697-L697,['open_edx'],"The following settings (all of which are in the same file) should be set or reviewed prior to
+    enabling this setting: BADGING_BACKEND, BADGR_API_TOKEN, BADGR_BASE_URL, BADGR_ISSUER_SLUG, BADGR_TIMEOUT.
+    Full guide for setting up OpenBadges available here:
+    https://edx.readthedocs.io/projects/edx-installing-configuring-and-running/en/latest/configuration/enable_badging.html  pylint: disable=line-too-long,useless-suppression"
+FEATURES['ENABLE_ORA_ALL_FILE_URLS'],lms,FEATURES['ENABLE_ORA_ALL_FILE_URLS'],django_settings,True,,,False,False,False,,,,,2020-03-03,False,"A ""work-around"" feature toggle meant to help in cases where some file uploads are not
+   discoverable.  If enabled, will iterate through all possible file key suffixes up to the max for displaying
+   file metadata in staff assessments.",DjangoSetting,"[883, 883, 883, 883, 883, 883, 883, 883, 883]",lms/envs/common.py,None,https://openedx.atlassian.net/browse/EDUCATOR-4951,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L883-L883,['temporary'],This temporary feature toggle does not have a target removal date.
+FEATURES['ENABLE_ORA_MOBILE_SUPPORT'],lms,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_ORA_TEAM_SUBMISSIONS'],lms,FEATURES['ENABLE_ORA_TEAM_SUBMISSIONS'],django_settings,True,SettingDictToggle,content-aurora,False,False,False,lms.djangoapps.teams.toggles,,,,2020-03-03,False,Set to True to enable team-based ORA submissions.,SettingDictToggle,"[12, 12, 12, 12, 12, 12, 12, 12, 12]",lms/djangoapps/teams/toggles.py,None,https://openedx.atlassian.net/browse/EDUCATOR-4951,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/teams/toggles.py#L12-L12,['temporary'],"This temporary feature toggle does not have a target removal date. This can be overridden by a
+      course waffle flags or a waffle switch with identical name."
+FEATURES['ENABLE_ORA_USERNAMES_ON_DATA_EXPORT'],lms,FEATURES['ENABLE_ORA_USERNAMES_ON_DATA_EXPORT'],django_settings,True,,,True,True,True,,,,,2020-06-11,False,"Set to True to add deanonymized usernames to ORA data
+   report.",DjangoSetting,"[909, 909, 909, 909, 909, 909, 909, 909, 909]",lms/envs/common.py,None,https://openedx.atlassian.net/browse/TNL-7273,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L909-L909,['temporary'],This temporary feature toggle does not have a target removal date.
+FEATURES['ENABLE_ORA_USER_STATE_UPLOAD_DATA'],lms,FEATURES['ENABLE_ORA_USER_STATE_UPLOAD_DATA'],django_settings,True,,,False,False,False,,,,,2020-03-03,False,"A ""work-around"" feature toggle meant to help in cases where some file uploads are not
+   discoverable.  If enabled, will pull file metadata from StudentModule.state for display in staff assessments.",DjangoSetting,"[897, 897, 897, 897, 897, 897, 897, 897, 897]",lms/envs/common.py,None,https://openedx.atlassian.net/browse/EDUCATOR-4951,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L897-L897,['temporary'],This temporary feature toggle does not have a target removal date.
+FEATURES['ENABLE_PASSWORD_RESET_FAILURE_EMAIL'],lms,FEATURES['ENABLE_PASSWORD_RESET_FAILURE_EMAIL'],django_settings,False,,,False,False,True,,,,,2017-07-20,False,"Whether to send an email for failed password reset attempts or not. This happens when a
+   user asks for a password reset but they don't have an account associated to their email. This is useful for
+   notifying users that they don't have an account associated with email addresses they believe they've registered
+   with. This setting can be overridden by a site-specific configuration.",DjangoSetting,"[832, 832, 832, 832, 832, 832, 832]",lms/envs/common.py,,https://openedx.atlassian.net/browse/OSPR-1832,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L832-L832,['open_edx'],
+FEATURES['ENABLE_PREREQUISITE_COURSES'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['ENABLE_PROCTORED_EXAMS'],lms,,django_settings,False,,,False,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_PUBLISHER'],lms,,django_settings,False,,,False,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_READING_FROM_MULTIPLE_HISTORY_TABLES'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['ENABLE_SERVICE_STATUS'],lms,,django_settings,False,,,False,False,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_SOFTWARE_SECURE_FAKE'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['ENABLE_SPECIAL_EXAMS'],lms,FEATURES['ENABLE_SPECIAL_EXAMS'],django_settings,True,,,True,True,True,,,,,2015-09-04,False,"Enable to use special exams, aka timed and proctored exams.",DjangoSetting,"[688, 688, 688, 688, 688, 688, 688]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/9744,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L688-L688,['open_edx'],
+FEATURES['ENABLE_STUDENT_HISTORY_VIEW'],lms,FEATURES['ENABLE_STUDENT_HISTORY_VIEW'],django_settings,True,,,True,True,True,,,,,2013-02-15,True,"This provides a UI to show a student's submission history in a problem by the Staff Debug
+   tool. Set to False if you want to hide Submission History from the courseware page.",DjangoSetting,"[278, 278, 278, 278, 278, 278, 278]",lms/envs/common.py,,https://github.com/openedx/edx-platform/commit/8f17e6ae9ed76fa75b3caf867b65ccb632cb6870,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L278-L278,['open_edx'],
+FEATURES['ENABLE_TEAMS'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_TEXTBOOK'],lms,FEATURES['ENABLE_TEXTBOOK'],django_settings,True,,,True,True,True,,,,,2014-03-27,True,Add PDF and HTML textbook tabs to the courseware.,DjangoSetting,"[143, 143, 143, 143, 143, 143, 143, 143]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/3064,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L143-L143,['open_edx'],"For consistency in user-experience, keep the value in sync with the setting of the same name
+   in the CMS."
+FEATURES['ENABLE_THIRD_PARTY_AUTH'],lms,FEATURES['ENABLE_THIRD_PARTY_AUTH'],django_settings,True,,,True,True,True,,,,,2014-09-15,False,"Turn on third-party auth. Disabled for now because full mplementations are not yet
+   available. Remember to run migrations if you enable this; we don't create tables by default. This feature can
+   be enabled on a per-site basis. When enabling this feature, remember to define the allowed authentication
+   backends with the AUTHENTICATION_BACKENDS setting.",DjangoSetting,"[458, 458, 458, 458, 458, 458]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L458-L458,['open_edx'],
+FEATURES['ENABLE_UNICODE_USERNAME'],lms,FEATURES['ENABLE_UNICODE_USERNAME'],django_settings,True,,,False,False,False,,,,,2017-06-27,False,"Set this to True to allow unicode characters in username. Enabling this will also
+   automatically enable SOCIAL_AUTH_CLEAN_USERNAMES. When this is enabled, usernames will have to match the
+   regular expression defined by USERNAME_REGEX_PARTIAL.",DjangoSetting,"[180, 180, 180, 180, 180, 180, 180]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/14729,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L180-L180,['open_edx'],
+FEATURES['ENABLE_V2_CERT_DISPLAY_SETTINGS'],lms,FEATURES['ENABLE_V2_CERT_DISPLAY_SETTINGS'],django_settings,False,,,False,True,True,,,,,2021-07-26,False,Whether to use the reimagined certificates_display_behavior and certificate_available_date,DjangoSetting,"[953, 953, 953, 953, 953, 953, 953, 953]",lms/envs/common.py,2021-10-01,'https://openedx.atlassian.net/browse/MICROBA-1405',https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L953-L953,['temporary'],
+FEATURES['ENABLE_VERIFIED_CERTIFICATES'],lms,,django_settings,False,,,False,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_VIDEO_ABSTRACTION_LAYER_API'],lms,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_VIDEO_BUMPER'],lms,,django_settings,False,,,False,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_VIDEO_UPLOAD_PIPELINE'],lms,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+FEATURES['ENABLE_XBLOCK_VIEW_ENDPOINT'],lms,FEATURES['ENABLE_XBLOCK_VIEW_ENDPOINT'],django_settings,True,,,True,True,True,,,,,2014-03-14,False,"Enable an API endpoint, named ""xblock_view"", to serve rendered XBlock views. This might be
+   used by external applications. See for instance jquery-xblock (now unmaintained):
+   https://github.com/openedx/jquery-xblock",DjangoSetting,"[231, 231, 231, 231, 231, 231, 231]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/2968,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L231-L231,['open_edx'],
+FEATURES['ENABLE_XBLOCK_XML_VALIDATION'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['ENTRANCE_EXAMS'],lms,FEATURES['ENTRANCE_EXAMS'],django_settings,True,SettingDictToggle,,False,False,False,openedx.core.toggles,,,,2015-12-01,False,"Enable entrance exams feature. When enabled, students see an exam xblock as the first unit
+   of the course.",SettingDictToggle,"[7, 7, 7, 7, 7, 7, 7]",openedx/core/toggles.py,,https://openedx.atlassian.net/browse/SOL-40,https://github.com/openedx/edx-platform/blob/master/openedx/core/toggles.py#L7-L7,['open_edx'],
+FEATURES['EXPOSE_CACHE_PROGRAMS_ENDPOINT'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['FALLBACK_TO_ENGLISH_TRANSCRIPTS'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['HIDE_DASHBOARD_COURSES_UNTIL_ACTIVATED'],lms,FEATURES['HIDE_DASHBOARD_COURSES_UNTIL_ACTIVATED'],django_settings,True,,,False,False,False,,,,,2018-05-18,False,"When set, it hides the Courses list on the Learner Dashboard page if the learner has not
+   yet activated the account and not enrolled in any courses.",DjangoSetting,"[268, 268, 268, 268, 268, 268, 268]",lms/envs/common.py,,https://openedx.atlassian.net/browse/OSPR-1814,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L268-L268,['open_edx'],
+FEATURES['INDIVIDUAL_DUE_DATES'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['IS_EDX_DOMAIN'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['LICENSING'],lms,FEATURES['LICENSING'],django_settings,True,,,True,True,True,,,,,2015-05-14,False,"Toggle platform-wide course licensing. The course.license attribute is then used to append
+   license information to the courseware.",DjangoSetting,"[615, 615, 615, 615, 615, 615, 615]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/7315,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L615-L615,['open_edx'],
+FEATURES['LOG_POSTPAY_CALLBACKS'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['LTI_1P3_ENABLED'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+FEATURES['MARK_LIBRARY_CONTENT_BLOCK_COMPLETE_ON_VIEW'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['MILESTONES_APP'],lms,FEATURES['MILESTONES_APP'],django_settings,True,SettingDictToggle,openedx-arch-bom,True,True,True,common.djangoapps.util.milestones_helpers,,,,2014-11-21,False,"Enable the milestones application, which manages significant Course and/or Student events in
+   the Open edX platform. (see https://github.com/openedx/edx-milestones) Note that this feature is required to enable
+   course pre-requisites.",SettingDictToggle,"[25, 25, 25, 25, 25, 25]",common/djangoapps/util/milestones_helpers.py,,,https://github.com/openedx/edx-platform/blob/master/common/djangoapps/util/milestones_helpers.py#L25-L25,['open_edx'],
+FEATURES['MODE_CREATION_FOR_TESTING'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['NOTICES_ENABLE_MOBILE'],lms,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+FEATURES['PREVENT_CONCURRENT_LOGINS'],lms,,django_settings,False,,,True,False,False,,,,,,,,,,,,,,,
+FEATURES['REROUTE_ACTIVATION_EMAIL'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+FEATURES['RESTRICT_AUTOMATIC_AUTH'],lms,FEATURES['RESTRICT_AUTOMATIC_AUTH'],django_settings,True,,,True,True,True,,,,,2018-05-07,True,"Prevent auto auth from creating superusers or modifying existing users. Auto auth is a
+   mechanism where superusers can simply modify attributes of other users by accessing the ""/auto_auth url"" with
+   the right
+   querystring parameters.",DjangoSetting,"[355, 355, 355, 355, 355, 355, 355]",lms/envs/common.py,,https://openedx.atlassian.net/browse/TE-2545,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L355-L355,['open_edx'],
+FEATURES['SEGMENT_IO_LMS'],lms,,django_settings,,,,,,True,,,,,,,,,,,,,,,
+FEATURES['SEPARATE_VERIFICATION_FROM_PAYMENT'],lms,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+FEATURES['SHOW_FOOTER_LANGUAGE_SELECTOR'],lms,FEATURES['SHOW_FOOTER_LANGUAGE_SELECTOR'],django_settings,False,,,False,True,True,,,,,2017-05-25,False,"When set to True, language selector will be visible in the footer.",DjangoSetting,"[739, 739, 739, 739, 739, 739, 739, 739]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/15133,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L739-L739,['open_edx'],"LANGUAGE_COOKIE_NAME is required to use footer-language-selector, set it if it has not been set."
+FEATURES['SHOW_HEADER_LANGUAGE_SELECTOR'],lms,FEATURES['SHOW_HEADER_LANGUAGE_SELECTOR'],django_settings,True,,,False,False,False,,,,,2017-05-25,False,"When set to True, language selector will be visible in the header.",DjangoSetting,"[723, 723, 723, 723, 723, 723, 723, 723]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/15133,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L723-L723,['open_edx'],"You should set the languages in the DarkLangConfig table to get this working. If you have
+   not set any languages in the DarkLangConfig table then the language selector will not be visible in the header."
+FEATURES['SHOW_PROGRESS_BAR'],lms,FEATURES['SHOW_PROGRESS_BAR'],django_settings,True,SettingDictToggle,,False,False,False,xmodule.seq_module,,,,2022-02-09,False,Set to True to show progress bar.,SettingDictToggle,"[65, 65, 65, 65, 65, 65, 65]",xmodule/seq_module.py,None,,https://github.com/openedx/edx-platform/blob/master/xmodule/seq_module.py#L65-L65,['open_edx'],
+FEATURES['SKIP_EMAIL_VALIDATION'],lms,FEATURES['SKIP_EMAIL_VALIDATION'],django_settings,True,,,False,False,False,,,,,2018-05-07,False,"Turn this on to skip sending emails for user validation.
+   Beware, as this leaves the door open to potential spam abuse.",DjangoSetting,"[376, 376, 376, 376, 376, 376, 376]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L376-L376,['open_edx'],The login MFE domain name should be listed in LOGIN_REDIRECT_WHITELIST.
+FEATURES['SQUELCH_PII_IN_LOGS'],lms,,django_settings,False,,,True,True,False,,,,,,,,,,,,,,,
+FEATURES['USE_MICROSITES'],lms,,django_settings,,,,,,True,,,,,,,,,,,,,,,
+FEATURES['test_django_plugin'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+GENERAL_RECOMMENDATION['is_personalized_recommendation'],lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+GENERATE_PROFILE_SCORES,lms,,django_settings,True,,,False,False,,,,,,,,,,,,,,,,
+GLOBAL_NOTICE_ENABLED,lms,GLOBAL_NOTICE_ENABLED,django_settings,True,SettingToggle,,False,False,False,,,,,2021-09-08,False,"When enabled, show the contents of GLOBAL_NOTICE_MESSAGE
+   as a message on every page. This is intended to be used as a way of
+   communicating an upcoming or currently active maintenance window or to
+   warn of known site issues. HTML is not supported for the message content,
+   only plaintext. Message styling can be controlled with GLOBAL_NOTICE_TYPE,
+   set to one of INFO, SUCCESS, WARNING, or ERROR (defaulting to INFO). Also
+   see openedx.core.djangoapps.util.maintenance_banner.add_maintenance_banner
+   for a variation that only shows a message on specific views.",SettingToggle,"[187, 187, 187, 187, 187, 187]",openedx/core/djangoapps/util/user_messages.py,,,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/util/user_messages.py#L187-L187,['open_edx'],
+HLSPlaybackEnabledFlag.enabled_for_all_courses,lms,HLSPlaybackEnabledFlag.enabled_for_all_courses,configuration_models,,,,,,,,,,,2017-04-19,False,"Add the ""hls"" profile to all displayed videos on the platform.",ConfigurationModel,"[16, 16, 16, 16, 16, 16, 16]",openedx/core/djangoapps/video_config/models.py,,https://github.com/openedx/edx-platform/pull/14924,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/video_config/models.py#L16-L16,['open_edx'],
+JWT_AUTH['JWT_VERIFY_EXPIRATION'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+LANGUAGE_COOKIE_HTTPONLY,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+LANGUAGE_COOKIE_SECURE,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+LOGGING['disable_existing_loggers'],lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+LOG_REQUEST_USER_CHANGES,lms,LOG_REQUEST_USER_CHANGES,django_settings,True,,,True,True,True,,,,,2021-03-25,False,"Turn this toggle on to provide additional debugging information in the case of a user
+      verification error. It will track anytime the `user` attribute of a request object is changed and store this
+      information on the request. This will also track the location where the change is coming from to quickly find
+      issues. If user verification fails at response time, all of the information about these
+      changes will be logged.",SettingToggle,"[101, 101, 101, 101, 101, 101, 101, 101]",openedx/core/djangoapps/safe_sessions/middleware.py,,https://openedx.atlassian.net/browse/ARCHBOM-1718,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/safe_sessions/middleware.py#L101-L101,['opt_in'],"Adds some processing overhead to all requests to gather debug info. Will also double the logging
+      for failed verification checks."
+LOG_REQUEST_USER_CHANGE_HEADERS,lms,LOG_REQUEST_USER_CHANGE_HEADERS,django_settings,True,SettingToggle,,False,False,False,,,,,2021-12-22,False,"Turn this toggle on to log all request headers, for all requests, for all user ids involved in
+      any user id change detected by safe sessions. The headers will provide additional debugging information. The
+      headers will be logged for all requests up until LOG_REQUEST_USER_CHANGE_HEADERS_DURATION seconds after
+      the time of the last mismatch. The header details will be encrypted, and only available with the private key.",SettingToggle,"[116, 116, 116, 116, 116, 116, 116, 116]",openedx/core/djangoapps/safe_sessions/middleware.py,,https://openedx.atlassian.net/browse/ARCHBOM-1940,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/safe_sessions/middleware.py#L116-L116,['opt_in'],"Logging headers of subsequent requests following a mismatch will only work if
+      LOG_REQUEST_USER_CHANGES is enabled and ENFORCE_SAFE_SESSIONS is disabled; otherwise, only headers of the inital
+      mismatch will be logged. Also, SAFE_SESSIONS_DEBUG_PUBLIC_KEY must be set. See
+      https://github.com/openedx/edx-platform/blob/master/common/djangoapps/util/log_sensitive.py
+      for instructions."
+LTI_NRPS_DISALLOW_PII,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+MARKETING_EMAILS_OPT_IN,lms,,django_settings,False,,,False,True,,,,,,,,,,,,,,,,
+MARK_LIBRARY_CONTENT_BLOCK_COMPLETE_ON_VIEW,lms,MARK_LIBRARY_CONTENT_BLOCK_COMPLETE_ON_VIEW,django_settings,,,,,,,,,,,2022-03-22,False,"If enabled, the Library Content Block is marked as complete when users view it.
+   Otherwise (by default), all children of this block must be completed.",DjangoSetting,"[987, 987, 987, 987, 987, 987, 987, 987, 987]",lms/envs/common.py,None,https://github.com/openedx/edx-platform/pull/28268,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L987-L987,['open_edx'],"For consistency in user-experience, keep the value in sync with the setting of the same name
+   in the LMS and CMS."
+MOCK_DEBUG,credentials,,django_settings,True,,,,False,False,,,,,,,,,,,,,,,
+OAUTH2_PROVIDER['ERROR_RESPONSE_WITH_SCOPES'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+OAUTH_DELETE_EXPIRED,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+OAUTH_ENFORCE_CLIENT_SECURE,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+OAUTH_ENFORCE_SECURE,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+ORGANIZATIONS_AUTOCREATE,lms,ORGANIZATIONS_AUTOCREATE,django_settings,,,,,,,,,,,2020-11-02,True,"When enabled, creating a course run or content library with
+   an ""org slug"" that does not map to an Organization in the database will trigger the
+   creation of a new Organization, with its name and short_name set to said org slug.
+   When disabled, creation of such content with an unknown org slug will instead
+   result in a validation error.
+   If you want the Organization table to be an authoritative information source in
+   Studio, then disable this; however, if you want the table to just be a reflection of
+   the orgs referenced in Studio content, then leave it enabled.",DjangoSetting,"[2636, 2636, 2636, 2636, 2636, 2636, 2636]",cms/envs/common.py,,https://github.com/openedx/edx-organizations/blob/master/docs/decisions/0001-phase-in-db-backed-organizations-to-all.rst,https://github.com/openedx/edx-platform/blob/master/cms/envs/common.py#L2636-L2636,['open_edx'],
+OTHER_MOCK['stuff'],credentials,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+OUTCOME_SURVEYS_EVENTS_ENABLED,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+PASSWORD_POLICY_COMPLIANCE_ROLLOUT_CONFIG['ENFORCE_COMPLIANCE_ON_LOGIN'],lms,,django_settings,False,,,True,True,False,,,,,,,,,,,,,,,
+PIPELINE['DISABLE_WRAPPER'],lms,,django_settings,True,,,True,True,,,,,,,,,,,,,,,,
+PIPELINE['PIPELINE_ENABLED'],lms,,django_settings,True,,,True,True,,,,,,,,,,,,,,,,
+PREPEND_WWW,lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+PROCTORED_EXAM_VIEWABLE_PAST_DUE,lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+PROCTORING_SETTINGS['ALLOW_CALLBACK_SIMULATION'],lms,,django_settings,True,,,,False,False,,,,,,,,,,,,,,,
+PROCTORING_SETTINGS['USE_ONBOARDING_PROFILE_API'],lms,,django_settings,True,,,,True,True,,,,,,,,,,,,,,,
+RATELIMIT_ENABLE,lms,RATELIMIT_ENABLE,django_settings,True,,,True,True,,,,,,2018-01-08,True,"When enabled, RATELIMIT_RATE is applied.
+    When disabled, RATELIMIT_RATE is not applied.",DjangoSetting,"[4718, 4718, 4718, 4718, 4718, 4718, 4718]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/16951,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L4718-L4718,['open_edx'],
+REQUIRE_DEBUG,lms,,django_settings,True,,,False,False,,,,,,,,,,,,,,,,
+RET.enable_optimizely_in_courseware,lms,,waffle_switches,False,WaffleSwitch,content-aurora,off,on,on,lms.djangoapps.courseware.toggles,2017-06-09 14:30:13,,2017-06-09 13:51:19,,,,,,,,,,,
+SEARCH_SKIP_ENROLLMENT_START_DATE_FILTERING,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+SEARCH_SKIP_INVITATION_ONLY_FILTERING,lms,SEARCH_SKIP_INVITATION_ONLY_FILTERING,django_settings,,,,,True,,,,,,2021-08-27,True,"If enabled, invitation-only courses will appear in search results.",DjangoSetting,"[4100, 4100, 4100, 4100, 4100, 4100]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L4100-L4100,['open_edx'],
+SEARCH_SKIP_SHOW_IN_CATALOG_FILTERING,lms,SEARCH_SKIP_SHOW_IN_CATALOG_FILTERING,django_settings,,,,,True,,,,,,2021-08-27,True,"If enabled, courses with a catalog_visibility set to ""none"" will still
+    appear in search results.",DjangoSetting,"[4107, 4107, 4107, 4107, 4107, 4107]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L4107-L4107,['open_edx'],
+SECURE_BROWSER_XSS_FILTER,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+SECURE_CONTENT_TYPE_NOSNIFF,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+SECURE_HSTS_INCLUDE_SUBDOMAINS,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+SECURE_HSTS_PRELOAD,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+SECURE_SSL_REDIRECT,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+SEND_CATALOG_INFO_SIGNAL,lms,SEND_CATALOG_INFO_SIGNAL,django_settings,,,,,,,,,,,2022-08-22,False,"When True, sends to catalog-info-changed signal when course_published occurs.
+   This is a temporary toggle to allow us to test the event bus integration; it should be removed and
+   always-on once the integration is well-tested and the error cases are handled. (This is separate
+   from whether the event bus itself is configured; if this toggle is on but the event bus is not
+   configured, we should expect a warning at most.)",SettingToggle,"[54, 54, 54, 54, 54, 54, 54, 54]",cms/djangoapps/contentstore/signals/handlers.py,2022-10-30,https://github.com/openedx/edx-platform/issues/30682,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/contentstore/signals/handlers.py#L54-L54,['temporary'],
+SEND_EMAIL_ON_PROGRAM_COMPLETION,credentials,SEND_EMAIL_ON_PROGRAM_COMPLETION,django_settings,,,,,,,,,,,2020-10-08,False,Toggle to control if we send a congratulatory email to learners after being issued a Program Certificate,SettingToggle,"[487, 487, 487, 487, 487, 487, 487, 487, 487]",credentials/settings/base.py,NA,MICROBA-521,https://github.com/openedx/credentials/blob/master/credentials/settings/base.py#L487-L487,['open_edx'],This is a toggle for the feature
+SESSION_COOKIE_HTTPONLY,lms,,django_settings,True,,,True,True,,,,,,,,,,,,,,,,
+SESSION_COOKIE_SECURE,lms,,django_settings,True,,,True,True,,,,,,,,,,,,,,,,
+SESSION_EXPIRE_AT_BROWSER_CLOSE,lms,,django_settings,True,,,False,False,,,,,,,,,,,,,,,,
+SESSION_SAVE_EVERY_REQUEST,lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+SHOW_ACCOUNT_ACTIVATION_CTA,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+SIMPLE_WIKI_REQUIRE_LOGIN_EDIT,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+SIMPLE_WIKI_REQUIRE_LOGIN_VIEW,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+SOCIAL_AUTH_CLEAN_USERNAMES,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+SOCIAL_AUTH_INACTIVE_USER_LOGIN,lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+SOCIAL_AUTH_RAISE_EXCEPTIONS,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+SOCIAL_AUTH_SANITIZE_REDIRECTS,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+SOCIAL_SHARING_SETTINGS['CERTIFICATE_FACEBOOK'],lms,,django_settings,False,,,False,True,,,,,,,,,,,,,,,,
+SOCIAL_SHARING_SETTINGS['CERTIFICATE_TWITTER'],lms,,django_settings,False,,,False,True,,,,,,,,,,,,,,,,
+SOCIAL_SHARING_SETTINGS['CUSTOM_COURSE_URLS'],lms,,django_settings,False,,,False,True,,,,,,,,,,,,,,,,
+SOCIAL_SHARING_SETTINGS['DASHBOARD_FACEBOOK'],lms,,django_settings,False,,,False,True,,,,,,,,,,,,,,,,
+SOCIAL_SHARING_SETTINGS['DASHBOARD_TWITTER'],lms,,django_settings,False,,,False,True,,,,,,,,,,,,,,,,
+SOME_FEATURE_NAME,lms,SOME_FEATURE_NAME,django_settings,,,,,,,,,,,2021-06-10,False,Flag would be used to show account activation popup after the registration,DjangoSetting,"[5140, 5140, 5140, 5140, 5140, 5140, 5140]",lms/envs/common.py,,https://github.com/openedx/edx-platform/pull/27661,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L5140-L5140,['open_edx'],
+STATIC_GRAB,lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+SWAGGER_SETTINGS['DEEP_LINKING'],lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+USE_CERTIFICATE_AVAILABLE_DATE,credentials,USE_CERTIFICATE_AVAILABLE_DATE,waffle_switches,,,,,,,,,,,2021-04-30,False,"Toggle to control use of the certificate_available_date
+   field during development.",WaffleSwitch,"[518, 518, 518, 518, 518, 518, 518, 518]",credentials/settings/base.py,2021-06-01,"https://openedx.atlassian.net/browse/MICROBA-1169, https://openedx.atlassian.net/browse/MICROBA-1198 (ticket for removal)",https://github.com/openedx/credentials/blob/master/credentials/settings/base.py#L518-L518,['temporary'],
+USE_I18N,lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+USE_L10N,lms,,django_settings,True,,,True,True,,,,,,,,,,,,,,,,
+USE_LEARNER_RECORD_MFE,credentials,USE_LEARNER_RECORD_MFE,django_settings,,,,,,,,,,,2021-08-10,False,"Determines if the Credentials IDA should redirect to the Learner Record MFE when navigating
+   between the program detail page and program list pages.",DjangoSetting,"[541, 541, 541, 541, 541, 541, 541]",credentials/settings/base.py,,,https://github.com/openedx/credentials/blob/master/credentials/settings/base.py#L541-L541,['opt_in'],"Requires the Learner Record MFE to be deployed in a given environment if toggled to true. Requires
+   a value to be set for the `LEARNER_RECORD_MFE_RECORDS_PAGE_URL` for navigation to route properly."
+USE_THOUSAND_SEPARATOR,lms,,django_settings,True,,,False,False,,,,,,,,,,,,,,,,
+USE_TZ,lms,,django_settings,True,,,True,True,True,,,,,,,,,,,,,,,
+USE_X_FORWARDED_HOST,lms,,django_settings,True,,,False,False,False,,,,,,,,,,,,,,,
+USE_X_FORWARDED_PORT,lms,,django_settings,,,,,False,,,,,,,,,,,,,,,,
+VEMPipelineIntegration.enabled,lms,VEMPipelineIntegration.enabled,configuration_models,,,,,,,,,,,2020-06-04,False,"Send videos to the Video Encode Manager (VEM) as part of the
+      video pipeline.",ConfigurationModel,"[14, 14, 14, 14, 14, 14, 14]",openedx/core/djangoapps/video_pipeline/models.py,,https://github.com/openedx/edx-platform/pull/24093,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/video_pipeline/models.py#L14-L14,['open_edx'],
+VERIFY_STUDENT['USE_DJANGO_MAIL'],lms,,django_settings,,,,,True,,,,,,,,,,,,,,,,
+VideoUploadsEnabledByDefault.enabled_for_all_courses,lms,VideoUploadsEnabledByDefault.enabled_for_all_courses,configuration_models,,,,,,,,,,,2017-11-10,False,"Allow video uploads for all courses of the platform. This
+      enables the ""Video Uploads"" menu in the CMS.",ConfigurationModel,"[55, 55, 55, 55, 55, 55, 55]",openedx/core/djangoapps/video_pipeline/models.py,,https://github.com/openedx/edx-platform/pull/16536,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/video_pipeline/models.py#L55-L55,['open_edx'],
+WIKI_ACCOUNT_HANDLING,lms,WIKI_ACCOUNT_HANDLING,django_settings,True,,,False,False,False,,,,,2012-08-13,False,"We recommend you leave this as 'False' for an Open edX installation
+   to get the proper behavior for register, login and logout. For the original docs see:
+   https://github.com/openedx/django-wiki/blob/edx_release/wiki/conf/settings.py",DjangoSetting,"[1956, 1956, 1956, 1956, 1956, 1956]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L1956-L1956,['open_edx'],
+WIKI_ANONYMOUS,lms,WIKI_ANONYMOUS,django_settings,True,,,False,False,False,,,,,2012-08-21,False,"Enabling this allows access to anonymous users.
+   For the original docs, see:
+   https://github.com/openedx/django-wiki/blob/edx_release/wiki/conf/settings.py",DjangoSetting,"[1966, 1966, 1966, 1966, 1966, 1966, 1966]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L1966-L1966,['open_edx'],Setting allow anonymous access to `True` may have styling issues.
+WIKI_ENABLED,lms,WIKI_ENABLED,django_settings,True,,,True,True,True,,,,,2012-07-13,True,"This setting allows us to have a collaborative tool to contribute or
+   modify content of course related materials.",DjangoSetting,"[1400, 1400, 1400, 1400, 1400, 1400]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L1400-L1400,['open_edx'],
+WIKI_LINK_LIVE_LOOKUPS,lms,WIKI_LINK_LIVE_LOOKUPS,django_settings,True,,,False,False,False,,,,,2012-08-23,False,"This setting is defined in the original docs:
+   https://github.com/openedx/django-wiki/blob/edx_release/wiki/conf/settings.py",DjangoSetting,"[1991, 1991, 1991, 1991, 1991, 1991]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L1991-L1991,['open_edx'],
+WIKI_USE_BOOTSTRAP_SELECT_WIDGET,lms,WIKI_USE_BOOTSTRAP_SELECT_WIDGET,django_settings,True,,,False,False,False,,,,,2012-08-22,False,"Enabling this will use the bootstrap select widget.
+   For the original docs, see:
+   https://github.com/openedx/django-wiki/blob/edx_release/wiki/conf/settings.py",DjangoSetting,"[1982, 1982, 1982, 1982, 1982, 1982]",lms/envs/common.py,,,https://github.com/openedx/edx-platform/blob/master/lms/envs/common.py#L1982-L1982,['open_edx'],
+XAPI_EVENTS_ENABLED,lms,,django_settings,,SettingToggle,,True,,,,,,,,,,,,,,,,,
+account.redirect_to_microfrontend,lms,account.redirect_to_microfrontend,waffle_flags,True,,,,both,both,,2022-07-12 20:13:30,"Arch Team uses cases #1 (incremental rollout) and #5 (beta testing) for the new Account Settings implementation via micro-frontend., Arch Team uses cases #1 (incremental rollout) and #5 (beta testing) for the new Account Settings implementation via micro-frontend.",2019-05-02 15:54:08,2019-04-30,False,"Supports staged rollout of a new micro-frontend-based implementation of the account page.
+   Its action can be overridden using site's ENABLE_ACCOUNT_MICROFRONTEND setting.",WaffleFlag,"[29, 29, 29, 29, 29, 29, 29, 29, 29]",openedx/core/djangoapps/user_api/accounts/toggles.py,2021-12-31,DEPR-17,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/user_api/accounts/toggles.py#L29-L29,"['temporary', 'open_edx']",Also set settings.ACCOUNT_MICROFRONTEND_URL.
+add-utm-params,lms,,waffle_switches,False,,,,on,off,,2017-08-02 14:44:39,,2017-07-26 19:59:32,,,,,,,,,,,
+agreements.enable_integrity_signature,lms,,waffle_flags,False,,,,on,both,,2022-01-19 15:52:35,MST-786: Used with frontend-app-learning to determine whether the honor code panel should be rendered for users that a) don't have an integrity signature yet and b) are attempting to access a graded unit.,2021-06-09 19:25:13,,,,,,,,,,,
+block_structure.invalidate_cache_on_publish,lms,block_structure.invalidate_cache_on_publish,waffle_switches,True,WaffleSwitch,content-aurora,off,off,off,openedx.core.djangoapps.content.block_structure.config,,,,2017-02-23,False,"When enabled, the block structure cache is invalidated when changes to
+   courses are published. If `block_structure.storage_backing_for_cache` is active, all block
+   structures related to the published course are also cleared from storage.",WaffleSwitch,"[12, 12, 12, 12, 12, 12, 12, 12, 12]",openedx/core/djangoapps/content/block_structure/config/__init__.py,2017-05-23,"https://github.com/openedx/edx-platform/pull/14358,
+   https://github.com/openedx/edx-platform/pull/14571,
+   https://openedx.atlassian.net/browse/DEPR-144",https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/content/block_structure/config/__init__.py#L12-L12,['temporary'],This switch will likely be deprecated and removed.
+block_structure.prune_old_versions,lms,,waffle_switches,,,,,on,,,2018-03-20 17:19:58,EDUCATOR-499,2018-03-20 17:19:40,,,,,,,,,,,
+block_structure.raise_error_when_not_found,lms,block_structure.raise_error_when_not_found,waffle_switches,True,WaffleSwitch,content-aurora,off,off,off,openedx.core.djangoapps.content.block_structure.config,,,,2017-02-23,False,"Raises an error if the requested block structure does not exist in block
+   structure store, or if it is outdated. Block structure store refers to both cache and storage,
+   if enabled.",WaffleSwitch,"[51, 51, 51, 51, 51, 51, 51, 51, 51]",openedx/core/djangoapps/content/block_structure/config/__init__.py,2017-05-23,"https://github.com/openedx/edx-platform/pull/14512,
+   https://github.com/openedx/edx-platform/pull/14770,
+   https://openedx.atlassian.net/browse/DEPR-143",https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/content/block_structure/config/__init__.py#L51-L51,['temporary'],"This switch will likely be deprecated and removed.
+   The annotation will be updated with the DEPR ticket once that process has started."
+block_structure.storage_backing_for_cache,lms,block_structure.storage_backing_for_cache,waffle_switches,False,WaffleSwitch,content-aurora,on,on,off,openedx.core.djangoapps.content.block_structure.config,2017-03-27 13:56:34,"TNL-6645, TNL-6645",2017-03-27 12:46:22,2017-02-23,False,"When enabled, block structures are stored in a more permanent storage,
+   like a database, which provides an additional backup for cache misses, instead having them
+   regenerated. The regenration of block structures is a time consuming process. Therefore,
+   enabling this switch is recommended for Production.",WaffleSwitch,"[30, 30, 30, 30, 30, 30, 30, 30, 30]",openedx/core/djangoapps/content/block_structure/config/__init__.py,2017-05-23,"https://github.com/openedx/edx-platform/pull/14512,
+   https://github.com/openedx/edx-platform/pull/14770,
+   https://openedx.atlassian.net/browse/DEPR-145",https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/content/block_structure/config/__init__.py#L30-L30,['temporary'],"Depends on `BLOCK_STRUCTURES_SETTINGS['STORAGE_CLASS']` and
+   `BLOCK_STRUCTURES_SETTINGS['STORAGE_KWARGS']`.
+   This switch will likely be deprecated and removed.
+   The annotation will be updated with the DEPR ticket once that process has started."
+block_structure.storage_backing_for_cache ,lms,,waffle_switches,,,,,,on,,2017-03-24 17:21:15,TNL-6645,2017-03-24 17:19:48,,,,,,,,,,,
+blockstore.use_blockstore_app_api,lms,blockstore.use_blockstore_app_api,waffle_switches,True,WaffleSwitch,,off,off,off,openedx.core.lib.blockstore_api.config.waffle,2022-08-31 16:52:47,"This switch is per work called out in https://openedx.atlassian.net/browse/TNL-9776
+
+It will be used to select whether the edx platform accesses the IDA version of blockstore or the Django App version. 
+
+The enabled setting selects the Django App version., This switch is per work called out in https://openedx.atlassian.net/browse/TNL-9776
+
+It will be used to select whether the edx platform accesses the IDA version of blockstore or the Django App version. 
+
+The enabled setting selects the Django App version.",2022-04-13 19:29:11,2022-01-13,False,"Enable to use the installed blockstore app's Python API directly instead of the
+   external blockstore service REST API.
+   The blockstore REST API is used by default.",WaffleSwitch,"[7, 7, 7, 7, 7, 7, 7, 7, 7]",openedx/core/lib/blockstore_api/config/waffle.py,None,"TNL-8705, BD-14",https://github.com/openedx/edx-platform/blob/master/openedx/core/lib/blockstore_api/config/waffle.py#L7-L7,"['temporary', 'open_edx']",This temporary feature toggle does not have a target removal date.
+branding.enable_branding_logs,lms,,waffle_flags,True,,,,both,both,,2020-12-03 14:28:32,use the querystring: dwft_branding.enable_branding_logs=1,2020-12-02 17:34:13,,,,,,,,,,,
+bulk_email.EMAIL_USE_COURSE_ID_FROM_FOR_BULK,lms,bulk_email.EMAIL_USE_COURSE_ID_FROM_FOR_BULK,django_settings,,,,,,,,,,,2020-10-01,False,"If False, use the same BULK_EMAIL_DEFAULT_FROM_EMAIL or DEFAULT_FROM_EMAIL as the from_addr for all bulk email, to avoid issues with spam filtering",DjangoSetting,"[8, 8, 8, 8, 8, 8, 8]",lms/djangoapps/bulk_email/toggles.py,,OSPR-4957,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/bulk_email/toggles.py#L8-L8,['open_edx'],
+certificates.auto_certificate_generation,lms,certificates.auto_certificate_generation,waffle_switches,False,WaffleSwitch,content-aperture,off,on,on,lms.djangoapps.certificates.config,2017-12-27 10:48:48,,2017-09-13 16:25:36,2017-09-14,False,This toggle will enable certificates to be automatically generated,WaffleSwitch,"[11, 11, 11, 11, 11, 11]",lms/djangoapps/certificates/config.py,,,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/certificates/config.py#L11-L11,['open_edx'],
+certificates.instructor_paced_only,lms,,waffle_switches,True,,,,on,on,,2017-08-22 15:36:24,EDUCATOR-528,2017-08-18 18:13:03,,,,,,,,,,,
+certificates.self_paced_only,lms,,waffle_switches,True,,,,on,on,,2017-09-06 18:04:15,"https://openedx.atlassian.net/browse/EDUCATOR-523
+",2017-07-25 20:13:17,,,,,,,,,,,
+cms.export_course_metadata,lms,,waffle_flags,True,,,,on,on,,2021-03-15 19:44:38,,2021-03-05 13:15:47,,,,,,,,,,,
+commerce_api.stop_basket_creation,lms,,waffle_flags,True,,,,on,on,,2017-08-21 14:32:49,,2017-08-17 17:11:52,,,,,,,,,,,
+completion.enable_completion_tracking,lms,,waffle_flags,,,,,,both,,2018-01-23 16:35:35,,2018-01-23 16:35:20,,,,,,,,,,,
+completion.enable_completion_tracking,lms,,waffle_switches,True,WaffleSwitch,content-cosmonauts,on,on,on,completion.waffle,2018-03-21 14:02:11,,2018-01-16 16:01:33,,,,,,,,,,,
+completion.enable_course_visual_progress,lms,,waffle_flags,,,,,off,,,,,,,,,,,,,,,,
+completion.enable_visual_progress,lms,,waffle_switches,,,,on,,,,2018-03-21 14:03:27,,2018-03-21 14:03:23,,,,,,,,,,,
+content_type_gating.studio_ui,lms,,waffle_flags,,,,,both,,,2018-11-08 19:41:38,,2018-11-07 16:53:17,,,,,,,,,,,
+contentstore.bypass_olx_failure,lms,contentstore.bypass_olx_failure,waffle_flags,True,,,off,off,off,,2021-06-28 17:09:52,"infinity, this is an experimental flag for validating course olx during course import. Will be removed once the feature is live.",2021-04-07 18:07:46,2021-04-15,False,Enables bypassing olx validation failures during course import.,WaffleFlag,"[39, 39, 39, 39, 39, 39, 39, 39]",cms/djangoapps/contentstore/toggles.py,2021-05-15,TNL-8214,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/contentstore/toggles.py#L39-L39,['open_edx'],
+contentstore.course_import_olx_validation,lms,,waffle_flags,,,,,on,,,2021-06-28 17:10:13,"Infinity, this is going to be replaced by a feature flag setting.",2021-04-07 18:04:39,,,,,,,,,,,
+contentstore.individualize_anonymous_user_id,lms,contentstore.individualize_anonymous_user_id,waffle_flags,False,,,,on,both,,2022-05-24 18:24:47,,2022-05-24 18:24:15,2022-05-04,False,This flag enables the use of unique anonymous_user_id during studio preview,CourseWaffleFlag,"[144, 144, 144, 144, 144, 144, 144, 144]",cms/djangoapps/contentstore/toggles.py,2022-05-30,MST-1455,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/contentstore/toggles.py#L144-L144,['temporary'],
+contentstore.library_authoring_mfe,lms,contentstore.library_authoring_mfe,waffle_flags,,,,,,,,,,,2020-08-03,False,Toggles the new micro-frontend-based implementation of the library authoring experience.,WaffleFlag,"[29, 29, 29, 29, 29, 29, 29, 29, 29]",cms/djangoapps/contentstore/config/waffle.py,2020-12-31,https://openedx.atlassian.net/wiki/spaces/COMM/pages/1545011241/BD-14+Blockstore+Powered+Content+Libraries+Taxonomies,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/contentstore/config/waffle.py#L29-L29,"['temporary', 'open_edx']",Also set settings.LIBRARY_AUTHORING_MICROFRONTEND_URL and ENABLE_LIBRARY_AUTHORING_MICROFRONTEND.
+contentstore.split_library_on_studio_dashboard,lms,contentstore.split_library_on_studio_dashboard,waffle_flags,,,,,on,,,2021-02-16 15:20:40,,2021-02-16 15:20:19,2020-07-8,False,Enables data new view for library on studio dashboard.,WaffleFlag,"[26, 26, 26, 26, 26, 26, 26]",cms/djangoapps/contentstore/toggles.py,,TNL-7536,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/contentstore/toggles.py#L26-L26,['open_edx'],
+course-v1:HarvardX+SW12.4x+1T2019a,lms,,waffle_flags,,,,,both,,,,,,,,,,,,,,,,
+course_apps.exams_ida,lms,course_apps.exams_ida,waffle_flags,,,,,,both,,,,,2022-07-27,False,Uses exams IDA,CourseWaffleFlag,"[22, 22, 22, 22, 22, 22, 22, 22]",openedx/core/djangoapps/course_apps/toggles.py,None,MST-1520,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/course_apps/toggles.py#L22-L22,['temporary'],
+course_apps.proctoring_settings_modal_view,lms,course_apps.proctoring_settings_modal_view,waffle_flags,True,,,on,on,on,,2021-10-26 16:37:46,,2021-09-30 10:07:16,2021-08-17,False,"When enabled, users will be directed to a new proctoring settings
+    modal on the Pages and Resources view when accessing proctored exam settings.",CourseWaffleFlag,"[9, 9, 9, 9, 9, 9, 9, 9]",openedx/core/djangoapps/course_apps/toggles.py,None,,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/course_apps/toggles.py#L9-L9,['temporary'],None
+course_blocks_api.hide_access_denials,lms,course_blocks_api.hide_access_denials,waffle_flags,,,,,,,,,,,2019-09-27,False,Waffle flag to hide access denial messages in the course blocks.,WaffleFlag,"[10, 10, 10, 10, 10, 10, 10, 10]",lms/djangoapps/course_api/blocks/toggles.py,None,,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/course_api/blocks/toggles.py#L10-L10,"['temporary', 'open_edx']",This temporary feature toggle does not have a target removal date.
+course_detail.course_detail_update_certificate_date,lms,,waffle_flags,True,,,,both,both,,,,,,,,,,,,,,,
+course_detail_update_certificate_date,lms,,waffle_flags,,,,,,both,,,,,,,,,,,,,,,
+course_duration_limits.delivery_enabled,lms,,waffle_switches,,,,,on,,,2019-04-08 14:24:47,,2019-04-08 14:24:39,,,,,,,,,,,
+course_duration_limits.enqueue_enabled,lms,,waffle_switches,,,,,on,,,2019-03-22 16:24:32,"Initial testing of Access Expiry Reminder emails
+
+REVMI-95",2019-03-22 16:23:36,,,,,,,,,,,
+course_experience.calendar_sync,lms,course_experience.calendar_sync,waffle_flags,,,,,,both,,2020-07-14 18:14:13,,2020-07-14 18:13:58,2021-01-26,False,"This course flag enables a course tool (which is a tool that is added on a course home page)
+   that sends course assignment calendars to course students, whenever they click on the ""Subscribe to calendar
+   updates"" button. The email contains an ics attachment that students can then use to sync with their own calendar
+   apps.",CourseWaffleFlag,"[53, 53, 53, 53, 53, 53, 53, 53, 53]",openedx/features/course_experience/__init__.py,2021-04-26,https://openedx.atlassian.net/browse/AA-36,https://github.com/openedx/edx-platform/blob/master/openedx/features/course_experience/__init__.py#L53-L53,['temporary'],"For this toggle to have an effect, the RELATIVE_DATES_FLAG toggle must be enabled, too."
+course_experience.course_outline_page,lms,,waffle_flags,True,,,on,on,on,,2017-12-12 19:19:12,,2017-06-29 15:08:28,,,,,,,,,,,
+course_experience.display_course_sock,lms,,waffle_flags,True,,,,on,on,,2017-10-02 17:44:00,,2017-08-16 20:41:02,,,,,,,,,,,
+course_experience.enable_about_sidebar_html,lms,course_experience.enable_about_sidebar_html,waffle_switches,True,WaffleSwitch,content-cosmonauts,off,off,off,openedx.features.course_experience.waffle,,,,2018-01-26,False,Used to determine whether to show custom HTML in the sidebar on the internal course about page.,WaffleSwitch,"[11, 11, 11, 11, 11, 11]",openedx/features/course_experience/waffle.py,,,https://github.com/openedx/edx-platform/blob/master/openedx/features/course_experience/waffle.py#L11-L11,['open_edx'],
+course_experience.enable_course_goals,lms,course_experience.enable_course_goals,waffle_flags,False,,,on,both,on,,2021-12-21 20:29:38,,2017-10-16 15:46:50,2017-09-11,False,Used to determine whether or not to use course goals for the particular course.,CourseWaffleFlag,"[25, 25, 25, 25, 25, 25, 25, 25]",openedx/features/course_experience/__init__.py,None,,https://github.com/openedx/edx-platform/blob/master/openedx/features/course_experience/__init__.py#L25-L25,"['opt_out', 'temporary']",This temporary feature toggle does not have a target removal date.
+course_experience.enable_new_course_outline,lms,,waffle_switches,,,,on,,,,2018-03-21 14:04:02,,2018-03-21 14:03:58,,,,,,,,,,,
+course_experience.gdpr,lms,,waffle_flags,True,,,,on,on,,2018-05-16 18:25:38,,2018-04-18 19:02:13,,,,,,,,,,,
+course_experience.gdpr,lms,,waffle_switches,,,,,,on,,2018-05-03 20:02:19,GDPR deletion UI,2018-05-03 20:01:55,,,,,,,,,,,
+course_experience.latest_update,lms,,waffle_flags,,,,,both,,,,,,,,,,,,,,,,
+course_experience.pre_start_access,lms,,waffle_flags,,,,,both,,,2017-09-18 15:58:39,,2017-09-18 15:58:17,,,,,,,,,,,
+course_experience.relative_dates,lms,course_experience.relative_dates,waffle_flags,False,,,,both,on,,2020-09-28 13:28:49,"Relative dates from edx-when and the new Dates tab.
+
+Experiment being run by the Always Available Squad. Please leave this ticket in place for a while (maybe until early 2021), as we are waiting for all courses that started pre-experiment to end before dropping all waffle code.",2020-02-27 15:06:14,2020-02-10,False,"Waffle flag to enable relative dates for course content. A 'Dates' tab will be visible in the
+   course view showing key course dates. Was previously an ExperimentWaffleFlag with experiment_id=17.",CourseWaffleFlag,"[41, 41, 41, 41, 41, 41, 41, 41]",openedx/features/course_experience/__init__.py,,https://openedx.atlassian.net/browse/AA-27,https://github.com/openedx/edx-platform/blob/master/openedx/features/course_experience/__init__.py#L41-L41,['opt_in'],"To set a relative due date for self-paced courses, the weeks_to_complete field for a course run
+   needs to be set. Currently it can be set through the publisher app."
+course_experience.relative_dates.1,lms,,waffle_flags,True,,,,on,on,,2021-05-19 19:02:12,"Disables bucketing by forcing anyone in experiment, into the treatment bucket (we're in full rollout phase now)",2020-03-03 20:05:07,,,,,,,,,,,
+course_experience.show_reviews_tool,lms,,waffle_flags,False,,,off,both,,,2018-05-02 13:58:32,Disabled this flag for all courses on 5/2.,2017-06-27 16:28:14,,,,,,,,,,,
+course_experience.unified_course_tab,lms,,waffle_flags,True,,,on,on,on,,2018-05-02 13:57:53,"As part of LEARNER-3605, this flag was set to No for everyone to match the old default of False, in advance of changing the default to True.  Ultimately, the intention is to get this to True and to remove this flag.
+- Updated 4/11 to be on for superusers and members of the early content testing group.
+-Updated 5/2 to be on for everyone.",2017-05-18 15:54:43,,,,,,,,,,,
+course_experience.unified_course_view,lms,,waffle_flags,,,,,,on,,2018-12-06 09:47:50,,2017-04-28 13:40:45,,,,,,,,,,,
+course_experience.use_bootstrap,lms,,waffle_flags,True,,,on,on,on,,2018-04-25 21:41:48,"This flag is True by default, but this setting just makes it explicit.",2017-10-20 18:46:43,,,,,,,,,,,
+course_goals.number_of_days_goals,lms,,waffle_flags,True,,,on,on,on,,2021-12-21 20:29:01,,2021-10-18 18:30:38,,,,,,,,,,,
+course_home.course_home_mfe,lms,,waffle_flags,False,,,on,both,both,,2021-05-06 15:59:13,,2020-06-23 15:04:55,,,,,,,,,,,
+course_home.course_home_mfe.1,lms,,waffle_flags,True,,,on,on,on,,2021-05-06 15:59:25,,2020-07-16 15:54:42,,,,,,,,,,,
+course_home.course_home_mfe_dates_tab,lms,,waffle_flags,True,,,on,on,on,,2021-05-06 15:59:34,,2020-06-23 15:08:05,,,,,,,,,,,
+course_home.course_home_mfe_outline_tab,lms,,waffle_flags,False,,,on,on,both,,2021-05-06 16:00:15,,2020-09-10 21:03:56,,,,,,,,,,,
+course_home.course_home_mfe_progress_tab,lms,,waffle_flags,False,,,on,both,on,,2021-09-10 13:32:24,,2021-04-26 19:13:14,,,,,,,,,,,
+course_home.course_home_use_legacy_frontend,lms,,waffle_flags,,,,both,,,,,,,,,,,,,,,,,
+course_list_api_rate_limit.rate_limit_10,lms,course_list_api_rate_limit.rate_limit_10,waffle_switches,True,WaffleSwitch,content-aurora,off,off,off,lms.djangoapps.course_api,,,,2018-06-12,False,"Waffle switch to enable the throttling of 10 requests/minute to the course API. For staff
+   users, this limit is 20 requests/minute.",WaffleSwitch,"[18, 18, 18, 18, 18, 18, 18]",lms/djangoapps/course_api/__init__.py,,https://openedx.atlassian.net/browse/LEARNER-5527,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/course_api/__init__.py#L18-L18,['circuit_breaker'],
+course_list_api_rate_limit.rate_limit_2,lms,course_list_api_rate_limit.rate_limit_2,waffle_switches,True,WaffleSwitch,content-aurora,off,off,off,lms.djangoapps.course_api,,,,2018-06-12,False,"Waffle switch to enable the throttling of 2 requests/minute to the course API. For staff
+   users, this limit is 10 requests/minute.",WaffleSwitch,"[9, 9, 9, 9, 9, 9, 9]",lms/djangoapps/course_api/__init__.py,,https://openedx.atlassian.net/browse/LEARNER-5527,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/course_api/__init__.py#L9-L9,['circuit_breaker'],
+course_live.enable_big_blue_button,lms,course_live.enable_big_blue_button,waffle_flags,True,,,,on,on,,2022-10-21 10:47:51,,2022-08-24 04:55:51,2022-06-23,False,Waffle flag to enable big blue button provider,CourseWaffleFlag,"[22, 22, 22, 22, 22, 22, 22, 22, 22]",openedx/core/djangoapps/course_live/config/waffle.py,2022-09-23,INF-308,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/course_live/config/waffle.py#L22-L22,"['temporary', 'open_edx']","When the flag is ON, the big blue button provider will be available in course live"
+course_live.enable_course_live,lms,course_live.enable_course_live,waffle_flags,True,,,,on,on,,2022-04-19 06:03:37,,2022-03-07 09:40:07,2022-03-02,False,Waffle flag to enable the course live app plugin,CourseWaffleFlag,"[10, 10, 10, 10, 10, 10, 10, 10, 10]",openedx/core/djangoapps/course_live/config/waffle.py,2022-06-02,TNL-9603,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/course_live/config/waffle.py#L10-L10,"['temporary', 'open_edx']","When the flag is ON, the course live app will be visible in the course authoring mfe"
+course_modes.use_new_track_selection,lms,course_modes.use_new_track_selection,waffle_flags,False,,,both,on,on,,2022-02-11 18:54:20,,2021-08-04 14:51:55,2021-8-23,False,This flag enables the use of the new track selection template for testing purposes before full rollout,WaffleFlag,"[50, 50, 50, 50, 50, 50, 50, 50, 50]",common/djangoapps/course_modes/views.py,None,REV-2133,https://github.com/openedx/edx-platform/blob/master/common/djangoapps/course_modes/views.py#L50-L50,['temporary'],This temporary feature toggle does not have a target removal date.
+courseware.courseware_mfe,lms,,waffle_flags,False,,,,on,both,,2020-12-10 18:18:24,,2020-05-07 17:26:12,,,,,,,,,,,
+courseware.enable_bulk_allowance,lms,,waffle_flags,True,,,,both,both,,,,,,,,,,,,,,,
+courseware.enable_new_financial_assistance_flow,lms,,waffle_flags,,,,,,both,,,,,,,,,,,,,,,
+courseware.enable_new_financial_assistance_flow,lms,courseware.enable_new_financial_assistance_flow,waffle_switches,True,WaffleSwitch,content-aurora,off,off,off,lms.djangoapps.courseware.config,,,,2022-03-25,False,"enables new internal only financial assistance flow, when active.",WaffleSwitch,"[9, 9, 9, 9, 9, 9, 9]",lms/djangoapps/courseware/config.py,,https://openedx.atlassian.net/browse/PROD-2588,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/courseware/config.py#L9-L9,['opt_in'],
+courseware.exam_resume_proctoring_improvements,lms,,waffle_flags,True,,,,both,both,,,,,,,,,,,,,,,
+courseware.mfe_proctored_exams,lms,,waffle_flags,True,,,,both,both,,,,,,,,,,,,,,,
+courseware.mfe_progress_milestones,lms,courseware.mfe_progress_milestones,waffle_flags,False,,,,both,on,,2021-10-25 14:01:15,This flag is owned by Engage squad. Mostly used to turn off the progress milestone feature for specific courses like capstones where it doesn't make sense. We need to figure out a longer-term solution for that problem.,2020-10-06 18:08:24,2020-10-07,False,"Waffle flag to display learner progress milestones in a course. Supports staged
+   rollout to students for a new micro-frontend-based implementation of the courseware page.",CourseWaffleFlag,"[28, 28, 28, 28, 28, 28, 28, 28, 28]",lms/djangoapps/courseware/toggles.py,none,AA-371,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/courseware/toggles.py#L28-L28,"['temporary', 'open_edx']",Also set settings.LEARNING_MICROFRONTEND_URL.
+courseware.mfe_progress_milestones_streak_celebration,lms,courseware.mfe_progress_milestones_streak_celebration,waffle_flags,True,,,,on,on,,2021-10-25 14:01:26,,2021-02-23 17:23:43,2021-02-16,False,"Waffle flag to display a celebration modal when learner completes a configurable streak
+   Supports staged rollout to students for a new micro-frontend-based implementation of the
+   courseware page.",CourseWaffleFlag,"[42, 42, 42, 42, 42, 42, 42, 42, 42]",lms/djangoapps/courseware/toggles.py,None,AA-304,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/courseware/toggles.py#L42-L42,"['temporary', 'open_edx']","Also set settings.LEARNING_MICROFRONTEND_URL and
+   COURSEWARE_MICROFRONTEND_PROGRESS_MILESTONES."
+courseware.mfe_progress_milestones_streak_discount_enabled,lms,courseware.mfe_progress_milestones_streak_discount_enabled,waffle_flags,,,,,,,,,,,2021-08-26,False,This flag enables an engagement discount incentive message.,CourseWaffleFlag,"[58, 58, 58, 58, 58, 58, 58, 58, 58]",lms/djangoapps/courseware/toggles.py,None,https://openedx.atlassian.net/browse/AA-950,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/courseware/toggles.py#L58-L58,"['opt_out', 'open_edx']",This flag depends on the streak celebration feature being enabled
+courseware.mfe_special_exams,lms,,waffle_flags,True,,,,both,both,,,,,,,,,,,,,,,
+courseware.microfrontend_course_exit_page,lms,courseware.microfrontend_course_exit_page,waffle_flags,False,,,,both,on,,2021-02-23 14:19:48,"Owned by Engage squad. Feature has landed, but flag is still around for course opt outs",2020-10-20 14:48:04,2020-10-02,False,Supports staged rollout of the new micro-frontend-based implementation of the course exit page.,CourseWaffleFlag,"[13, 13, 13, 13, 13, 13, 13, 13, 13]",lms/djangoapps/courseware/toggles.py,None,AA-188,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/courseware/toggles.py#L13-L13,"['open_edx', 'temporary']",Also set settings.LEARNING_MICROFRONTEND_URL.
+courseware.microfrontend_course_exit_pagecourseware.microfrontend_course_exit_page,lms,,waffle_flags,,,,,off,,,,,,,,,,,,,,,,
+courseware.microfrontend_course_team_preview,lms,,waffle_flags,,,,both,,,,,,,,,,,,,,,,,
+courseware.optimized_render_xblock,lms,courseware.optimized_render_xblock,waffle_flags,,,,,on,,,2021-02-11 21:36:58,,2021-02-11 19:53:11,2021-02-09,False,"Waffle flag that determines whether we speed up the render_xblock for browsers by
+   removing unnecessary JavaScript and CSS. It is possible that this could introduce edge cases with content
+   that relies on these assets, so being a CourseWaffleFlag will give us the flexibility to exempt courses
+   from these optimizations.",CourseWaffleFlag,"[72, 72, 72, 72, 72, 72, 72]",lms/djangoapps/courseware/toggles.py,2021-05-01,,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/courseware/toggles.py#L72-L72,['temporary'],
+courseware.proctoring_improvements,lms,,waffle_flags,True,,,,both,both,,2021-02-02 12:51:49,,2020-12-09 21:48:54,,,,,,,,,,,
+courseware.redirect_to_microfrontend,lms,,waffle_flags,True,,,,both,both,,,,,,,,,,,,,,,
+courseware.streak_discount_enabled,lms,,waffle_flags,False,,,,both,on,,2021-10-25 14:11:02,,2021-09-02 15:35:37,,,,,,,,,,,
+courseware.use_legacy_frontend,lms,,waffle_flags,,,,both,,,,,,,,,,,,,,,,,
+courseware_tabs.enable_dates_tab,lms,,waffle_flags,,,,,,on,,2020-02-25 19:35:20,,2020-02-25 18:18:57,,,,,,,,,,,
+credentials.student_records,lms,,waffle_flags,True,,,,on,on,,2018-08-03 16:56:26,"A temporary feature toggle for the in-development Student Records work being done by the Learner <3 team, A temporary feature toggle for the in-development Student Records work being done by the Learner <3 team",2018-05-14 17:52:29,,,,,,,,,,,
+credentials.use_learner_record_mfe,lms,credentials.use_learner_record_mfe,waffle_switches,False,WaffleSwitch,content-aperture,off,on,on,openedx.core.djangoapps.credentials.config,2022-12-16 21:04:55,,2022-10-21 13:40:10,2022-09-07,False,"This toggle will inform the Program Dashboard to route to the Learner Record MFE over the
+     legacy frontend of the Credentials IDA.",WaffleSwitch,"[10, 10, 10, 10, 10, 10]",openedx/core/djangoapps/credentials/config.py,,,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/credentials/config.py#L10-L10,['open_edx'],
+discount_experiment_AA759,lms,,waffle_flags,,,,,off,,,,,,,,,,,,,,,,
+discount_experiment_AA759.1,lms,,waffle_flags,,,,,off,,,,,,,,,,,,,,,,
+discounts.enable_discounting,lms,discounts.enable_discounting,waffle_flags,True,,,,on,on,,2020-01-10 16:37:52,,2019-05-16 17:43:14,2019-4-16,False,Toggle discounts always being disabled,WaffleFlag,"[31, 31, 31, 31, 31, 31, 31, 31, 31]",openedx/features/discounts/applicability.py,None,REVEM-282,https://github.com/openedx/edx-platform/blob/master/openedx/features/discounts/applicability.py#L31-L31,['temporary'],This temporary feature toggle does not have a target removal date.
+discussions.enable_discussions_mfe,lms,discussions.enable_discussions_mfe,waffle_flags,False,,,on,both,on,,2022-10-19 10:49:25,,2022-01-28 13:02:14,2021-11-05,False,Waffle flag to use the new MFE experience for discussions in the course tab,CourseWaffleFlag,"[7, 7, 7, 7, 7, 7, 7]",lms/djangoapps/discussion/toggles.py,2022-12-05,,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/discussion/toggles.py#L7-L7,"['temporary', 'open_edx']",
+discussions.enable_discussions_mfe_for_everyone,lms,,waffle_flags,,,,,,on,,2022-04-25 07:35:34,,2022-04-25 07:35:22,,,,,,,,,,,
+discussions.enable_learners_stats,lms,discussions.enable_learners_stats,waffle_flags,True,,,on,on,on,,2022-10-19 08:25:22,,2022-08-12 15:04:20,2022-08-12,False,Waffle flag to enable learners stats,CourseWaffleFlag,"[9, 9, 9, 9, 9, 9, 9, 9, 9]",lms/djangoapps/discussion/config/waffle.py,2022-10-02,INF-444,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/discussion/config/waffle.py#L9-L9,"['temporary', 'open_edx']","When the flag is ON, API will return learners stats with original values."
+discussions.enable_learners_tab_in_discussions_mfe,lms,discussions.enable_learners_tab_in_discussions_mfe,waffle_flags,True,,,on,on,on,,2022-10-19 08:23:40,,2022-04-21 10:45:34,2022-02-21,False,Waffle flag to enable learners tab in the new MFE experience for discussions,CourseWaffleFlag,"[16, 16, 16, 16, 16, 16, 16]",lms/djangoapps/discussion/toggles.py,2022-05-21,,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/discussion/toggles.py#L16-L16,"['temporary', 'open_edx']",
+discussions.enable_moderation_reason_codes,lms,discussions.enable_moderation_reason_codes,waffle_flags,True,,,on,on,on,,2022-10-19 08:23:10,,2022-04-05 10:59:01,2022-02-22,False,Waffle flag to toggle support for the new edit and post close reason codes,CourseWaffleFlag,"[27, 27, 27, 27, 27, 27, 27]",lms/djangoapps/discussion/toggles.py,2022-09-22,,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/discussion/toggles.py#L27-L27,"['temporary', 'open_edx']",
+discussions.enable_new_structure_discussions,lms,discussions.enable_new_structure_discussions,waffle_flags,False,,,,both,on,,2022-11-18 12:44:22,,2022-05-20 07:41:46,2022-02-22,False,Waffle flag to toggle on the new structure for in context discussions,CourseWaffleFlag,"[36, 36, 36, 36, 36, 36, 36]",openedx/core/djangoapps/discussions/config/waffle.py,2022-12-22,,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/discussions/config/waffle.py#L36-L36,"['temporary', 'open_edx']",
+discussions.enable_reported_content_email_notifications,lms,discussions.enable_reported_content_email_notifications,waffle_flags,True,,,,on,on,,2022-11-29 13:19:04,Flag to enable/disable reported content email notifications for discussions.,2022-04-13 14:38:54,2022-03-08,False,Waffle flag to toggle email notifications for reported content for moderators,CourseWaffleFlag,"[38, 38, 38, 38, 38, 38, 38]",lms/djangoapps/discussion/toggles.py,2022-12-31,,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/discussion/toggles.py#L38-L38,"['temporary', 'open_edx']",
+discussions.enable_view_mfe_in_iframe,lms,,waffle_flags,False,,,on,on,off,,2022-09-14 06:53:30,"Flag to enable new discussions MFE experience within an iframe, Flag to enable new discussions MFE experience within an iframe",2022-08-03 10:30:06,,,,,,,,,,,
+discussions.forum_response_notifications,lms,,waffle_switches,True,,,,on,on,,2017-11-28 15:50:38,,2017-11-14 19:02:27,,,,,,,,,,,
+discussions.override_discussion_legacy_settings,lms,discussions.override_discussion_legacy_settings,waffle_flags,,,,,both,,,2022-02-17 10:49:46,"(Multiple issues reported for discussion blackout dates - edx-infinity team)
+A ticket came in which included many instances of the course where the course team has incorrectly set up course discussion blackout dates. In order to fix all those instances, course teams either have to update their blackout dates from the old UI or use course authoring MFE.
+
+By enabling this waffle flag we are giving course teams an option to verify what they have entered and what were the instructions to add a new discussion blackout date. 
+
+https://openedx.atlassian.net/browse/TNL-9374",2021-12-09 08:39:52,2021-06-15,False,Waffle flag to override visibility of discussion settings for legacy experience.,CourseWaffleFlag,"[9, 9, 9, 9, 9, 9, 9, 9, 9]",openedx/core/djangoapps/discussions/config/waffle.py,2021-12-31,TNL-8389,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/discussions/config/waffle.py#L9-L9,"['temporary', 'open_edx']","When the flag is ON, the discussion settings will be available on legacy experience."
+discussions.pages_and_resources_mfe,lms,discussions.pages_and_resources_mfe,waffle_flags,True,,,on,on,on,,2021-10-26 16:38:35,"infinity:  TNL-8846
+Release v1.5
+26th Oct 21
+
+infinity/TNL-8443: New discussion experience.
+Aug 17th 2021:
+Disabled flag for staff / added infinity, marco, jfay, jristau",2021-06-28 16:34:27,2021-05-24,False,Waffle flag to enable new Pages and Resources experience for course.,CourseWaffleFlag,"[23, 23, 23, 23, 23, 23, 23, 23, 23]",openedx/core/djangoapps/discussions/config/waffle.py,2021-12-31,TNL-7791,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/discussions/config/waffle.py#L23-L23,"['temporary', 'open_edx']","When the flag is ON, the new experience for Pages and Resources will be enabled."
+discussions.send_notifications_for_course,lms,,waffle_flags,False,,,,on,both,,2017-12-04 20:50:31,,2017-12-04 20:50:07,,,,,,,,,,,
+dynamic_pacing.studio_course_update,lms,,waffle_switches,True,,,,on,on,,2017-11-07 17:58:27,,2017-11-06 22:19:30,,,,,,,,,,,
+edx-when-enabled,lms,,waffle_flags,,,,,,on,,2019-05-15 18:22:28,,2019-05-15 18:21:57,,,,,,,,,,,
+edx-when:course-v1:edX+StageProctortrack+2019,lms,,waffle_flags,,,,,,on,,2019-04-30 18:19:14,,2019-04-30 18:18:32,,,,,,,,,,,
+edx_proctoring.onboarding_profile_instructor_dashboard_api,lms,,waffle_switches,False,,,,off,on,,2022-01-26 17:59:25,,2021-06-25 17:16:34,,,,,,,,,,,
+edx_proctoring.reds_api_redirect,lms,,waffle_switches,True,,,,on,on,,2021-10-14 12:20:56,,2021-10-13 21:07:06,,,,,,,,,,,
+edx_proctoring.rpnowv4_flow,lms,,waffle_switches,True,,,,on,on,,2019-07-25 14:24:44,"When state is active, all RPNow proctored exams (i.e. those with backend null/""software_secure"") will have a slightly altered learner flow. These flow changes are motivated by the fact that RPNow v4 doesn't cache its video to disk, and thus that we need to lock the learner out of their exam session if their connection to PSI's servers drop. The flow changes are such that the learner can only view their exam from within PSI's secure browser, which closes automatically in the network failure condition.",2019-05-22 20:59:08,,,,,,,,,,,
+edx_search.default_elastic_search,lms,,waffle_switches,True,,,,off,off,,2022-07-12 17:01:13,"TNL-9899.
+This switch will set the search to default to ElasticSearch when no search engine is found. This should be turned on before attempting to test OpenSearch., TNL-9899.
+This switch will set the search to default to ElasticSearch when no search engine is found. This should be turned on before attempting to test OpenSearch.",2022-07-11 06:27:31,,,,,,,,,,,
+effort_estimation.disabled,lms,effort_estimation.disabled,waffle_flags,True,,,on,on,on,,2022-04-21 13:24:46,"Flag created to match prod., Flag created to match prod., Turned off while we evaluate its future. Lots of courses could not be estimated due to missing video duraitons or offline components like bootcamps which we can't automatically measure. Engage Squad owns this feature.",2022-04-21 13:19:50,2021-07-27,False,"If effort estimations are confusing for a given course (e.g. the course team has added manual
+   estimates), you can turn them off case by case here.",CourseWaffleFlag,"[10, 10, 10, 10, 10, 10]",openedx/features/effort_estimation/toggles.py,,,https://github.com/openedx/edx-platform/blob/master/openedx/features/effort_estimation/toggles.py#L10-L10,['opt_out'],
+effort_estimation.location,lms,,waffle_flags,,,,,both,,,,,,,,,,,,,,,,
+enable_checklists_quality,lms,,waffle_flags,,,,,both,,,,,,,,,,,,,,,,
+enable_mobile_course_ui,lms,,waffle_switches,,,,,,on,,2020-02-12 19:46:46,,2020-02-12 19:46:10,,,,,,,,,,,
+enable_secondary_email_feature,lms,,waffle_switches,True,,,,on,on,,2019-03-15 16:47:08,,2019-02-06 16:22:02,,,,,,,,,,,
+enterprise.enterprise_header_links,lms,,waffle_flags,True,,,,on,on,,2020-08-11 18:04:54,,2020-07-30 16:34:08,,,,,,,,,,,
+experiments.add_dashboard_info,lms,experiments.add_dashboard_info,waffle_flags,,,,,,,,,,,2019-3-28,False,Toggle for adding info about each course to the dashboard metadata,WaffleFlag,"[44, 44, 44, 44, 44, 44, 44, 44, 44]",lms/djangoapps/experiments/utils.py,None,REVEM-118,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/experiments/utils.py#L44-L44,['temporary'],This temporary feature toggle does not have a target removal date.
+experiments.add_programs,lms,experiments.add_programs,waffle_flags,,,,,,,,,,,2019-2-25,False,Toggle for adding the current course's program information to user metadata,WaffleFlag,"[29, 29, 29, 29, 29, 29, 29, 29, 29]",lms/djangoapps/experiments/utils.py,None,"REVEM-63, REVEM-198",https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/experiments/utils.py#L29-L29,['temporary'],This temporary feature toggle does not have a target removal date.
+experiments.add_upsell_tracking,lms,experiments.add_upsell_tracking,waffle_flags,True,,,,on,on,,2020-07-21 20:06:07,,2020-07-09 13:33:25,2020-7-7,False,Make sure upsell tracking JS works as expected.,WaffleFlag,"[56, 56, 56, 56, 56, 56, 56, 56, 56]",lms/djangoapps/experiments/utils.py,None,REV-1205,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/experiments/utils.py#L56-L56,['temporary'],This temporary feature toggle does not have a target removal date.
+experiments.mobile_upsell_rev934,lms,experiments.mobile_upsell_rev934,waffle_flags,True,,,,on,on,,2019-10-25 15:56:10,,2019-09-16 13:50:10,2019-09-05,False,Toggle mobile upsell enabled,WaffleFlag,"[27, 27, 27, 27, 27, 27, 27, 27, 27]",lms/djangoapps/experiments/views_custom.py,None,REV-934,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/experiments/views_custom.py#L27-L27,['temporary'],This temporary feature toggle does not have a target removal date.
+export_course_metadata,lms,export_course_metadata,waffle_flags,,,,,,,,,,,2021-03-01,False,Export of course metadata (initially to s3 for use by braze),WaffleFlag,"[7, 7, 7, 7, 7, 7, 7, 7]",cms/djangoapps/export_course_metadata/toggles.py,None,AA-461,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/export_course_metadata/toggles.py#L7-L7,['temporary'],
+first_purchase_offer_banner.display,lms,,waffle_flags,True,,,,on,on,,2019-05-30 13:50:29,,2019-05-15 14:45:36,,,,,,,,,,,
+get-multitenant-programs,lms,,waffle_switches,True,,,,on,on,,2017-07-27 14:59:43,,2017-07-06 19:10:18,,,,,,,,,,,
+grades.MATERIAL_RECOMPUTE_ONLY,lms,,waffle_flags,True,,,,on,on,,2020-07-22 17:36:28,"When this flag is on, only material changes in grading policy will trigger grade recalculation. Immaterial changes - that DON'T trigger recalculation anymore - are:
+Assignment type Name changed
+Abbreviation changed",2020-07-22 14:56:25,,,,,,,,,,,
+grades.assume_zero_grade_if_absent,lms,,waffle_switches,True,,,on,on,on,,2017-07-26 15:27:06,,2017-05-10 23:17:15,,,,,,,,,,,
+grades.bulk_management,lms,grades.bulk_management,waffle_flags,True,,,,both,both,,2021-08-03 16:55:24,,2019-10-02 14:25:23,2019-08-20,False,"When enabled, bulk features are visible for management in masters course. As far
+   as we understand, this feature is now unused and obsolete.",CourseWaffleFlag,"[65, 65, 65, 65, 65, 65, 65]",lms/djangoapps/grades/config/waffle.py,,https://github.com/openedx/edx-platform/pull/21389,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/grades/config/waffle.py#L65-L65,['open_edx'],
+grades.disable_regrade_on_policy_change,lms,grades.disable_regrade_on_policy_change,waffle_switches,True,WaffleSwitch,content-aurora,off,off,off,lms.djangoapps.grades.config.waffle,2017-10-17 14:07:30,,2017-09-28 17:05:38,2017-08-03,False,"When enabled, a change in grading policy will not trigger re-grading.",WaffleSwitch,"[17, 17, 17, 17, 17, 17, 17]",lms/djangoapps/grades/config/waffle.py,,https://github.com/openedx/edx-platform/pull/15733,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/grades/config/waffle.py#L17-L17,['open_edx'],
+grades.enforce_freeze_grade_after_course_end,lms,,waffle_flags,False,,,on,both,on,,2020-06-23 20:48:18,,2020-06-23 20:23:11,,,,,,,,,,,
+grades.rejected_exam_overrides_grade,lms,grades.rejected_exam_overrides_grade,waffle_flags,True,,,on,on,on,,2020-06-23 20:48:18,,2020-06-23 20:23:11,2018-10-01,False,"When enabled, grades can no longer be updated 30 days after a course has ended. Note that this
+   is only valid for courses which actually have an end date.",CourseWaffleFlag,"[40, 40, 40, 40, 40, 40, 40]",lms/djangoapps/grades/config/waffle.py,,https://github.com/openedx/edx-platform/pull/19026,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/grades/config/waffle.py#L40-L40,['open_edx'],
+grades.writable_gradebook,lms,grades.writable_gradebook,waffle_flags,True,,,on,on,on,,2020-06-23 20:48:11,,2019-02-06 18:52:02,2018-10-03,False,"When enabled, add GET/POST endpoints for updating gradebook entries in bulk. Also, a link to
+   the writable gradebook is added to the instructor dashboard.",CourseWaffleFlag,"[53, 53, 53, 53, 53, 53, 53, 53]",lms/djangoapps/grades/config/waffle.py,,https://github.com/openedx/edx-platform/pull/19054,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/grades/config/waffle.py#L53-L53,['open_edx'],Enabling this requires that the `WRITABLE_GRADEBOOK_URL` setting be properly defined.
+grades.write_only_if_engaged,lms,,waffle_switches,True,,,on,on,on,,2017-05-05 14:24:31,"TNL-6904, TNL-6904
+, EDUCATOR-258",2017-04-24 16:59:09,,,,,,,,,,,
+instructor.enable_data_download_v2,lms,instructor.enable_data_download_v2,waffle_flags,,,,,,,,,,,2020-07-8,False,instructor,WaffleFlag,"[11, 11, 11, 11, 11, 11, 11]",lms/djangoapps/instructor/toggles.py,,PROD-1309,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/instructor/toggles.py#L11-L11,['open_edx'],
+instructor.researcher,lms,,waffle_flags,True,,,on,on,,,2020-02-04 18:01:59,,2020-02-03 22:52:12,,,,,,,,,,,
+instructor_task.generate_grade_report_for_verified_only,lms,,waffle_switches,False,,,,off,on,,2021-01-22 14:03:06,"Run grading tasks only for verified learners and skip audit/honor learners.
+PROD-968
+CR-3194",2020-02-04 09:03:57,,,,,,,,,,,
+instructor_task.generate_problem_grade_report_verified_only,lms,,waffle_flags,True,,,both,both,,,,,,,,,,,,,,,,
+instructor_task.optimize_get_learners_for_course,lms,,waffle_switches,False,WaffleSwitch,content-tnl,off,on,off,lms.djangoapps.instructor_task.config.waffle,2018-11-27 11:47:26,EDUCATOR-3483: CS50 Grade Report memory usage,2018-11-27 11:46:41,,,,,,,,,,,
+instructor_task.use_on_disk_grade_reporting,lms,instructor_task.use_on_disk_grade_reporting,waffle_flags,,,,,both,,,,,,2022-12-01,False,"When generating grade reports, write chunks to disk to avoid out of memory errors.",CourseWaffleFlag,"[27, 27, 27, 27, 27, 27, 27, 27]",lms/djangoapps/instructor_task/config/waffle.py,2022-01-10,AU-926,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/instructor_task/config/waffle.py#L27-L27,['temporary'],
+ip.legacy,lms,ip.legacy,waffle_switches,True,WaffleSwitch,openedx-arch-bom,off,off,off,openedx.core.djangoapps.util.legacy_ip,2022-08-30 13:58:44,openedx.core.djangoapps.util.ip.USE_LEGACY_IP -- emergency/rollout switch to restore legacy IP determination. (Temporary switch.),2022-03-25 16:05:32,2022-03-24,False,"Emergency switch to revert to use an older, less secure method for
+   IP determination (instead of the newer, safer code in ``edx_django_utils.ip``).
+   When enabled, instructs switch's callers to revert to using the *leftmost*
+   IP from the X-Forwarded-For header. When disabled (the default), callers should use the new
+   code path for IP determination, which has callers retrieve the entire external chain or pick
+   the leftmost or rightmost IP from it. The construction of the external chain is configurable
+   via ``CLOSEST_CLIENT_IP_FROM_HEADERS``.
+     This toggle, as well as any other legacy IP references, should be deleted (in the off
+   position) when the new IP code is well-tested and all IP-reliant code has been switched over
+   to using ``edx_django_utils.ip``.",WaffleSwitch,"[15, 15, 15, 15, 15, 15, 15, 15, 15]",openedx/core/djangoapps/util/legacy_ip.py,2023-01-01,https://2u-internal.atlassian.net/browse/ARCHBOM-2056 (internal only),https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/util/legacy_ip.py#L15-L15,['temporary'],"This switch does not globally control handling of IP addresses; it only
+   affects code that is explicitly querying the switch and using ``get_legacy_ip``."
+journals.enable_journal_integration,lms,,waffle_switches,,,,,,on,,2018-10-10 19:27:00,,2018-10-10 19:26:49,,,,,,,,,,,
+learner_analytics.enable_dashboard_tab,lms,,waffle_flags,True,,,,on,on,,2018-02-06 20:58:51,,2018-01-17 21:14:04,,,,,,,,,,,
+learner_analytics.include_upsell_modal,lms,,waffle_flags,True,,,,on,on,,2018-01-31 16:37:23,,2018-01-31 16:27:33,,,,,,,,,,,
+learner_dashboard.enable_masters_program_tab_view,lms,learner_dashboard.enable_masters_program_tab_view,waffle_flags,True,,,,on,on,,2022-02-16 12:08:00,,2021-12-27 13:06:49,2021-10-19,False,"Waffle flag to enable new Masters Program discussion experience for masters program.
+    This flag is used to decide weather we need to render master program data in ""tab"" view or simple view.
+    In the new tab view, we have tabs like ""journey"", ""live"", ""discussions""",WaffleFlag,"[25, 25, 25, 25, 25, 25, 25, 25, 25]",lms/djangoapps/learner_dashboard/config/waffle.py,2021-12-31,TNL-8434,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/learner_dashboard/config/waffle.py#L25-L25,"['temporary', 'open_edx']","When the flag is ON, the new tabbed experience for Master Program Page will be enabled."
+learner_dashboard.enable_program_discussions,lms,,waffle_flags,,,,,,both,,2021-09-03 07:27:07,,2021-09-03 07:26:25,,,,,,,,,,,
+learner_dashboard.enable_program_tab_view,lms,learner_dashboard.enable_program_tab_view,waffle_flags,True,,,,on,on,,2022-02-16 12:07:42,,2021-11-19 06:59:13,2021-08-25,False,"Waffle flag to enable new Program discussion experience in tab view for course.
+    This flag is used to decide weather we need to render program data in ""tab"" view or simple view.
+    In the new tab view, we have tabs like ""journey"", ""live"", ""discussions""",WaffleFlag,"[8, 8, 8, 8, 8, 8, 8, 8, 8]",lms/djangoapps/learner_dashboard/config/waffle.py,2021-12-31,TNL-8434,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/learner_dashboard/config/waffle.py#L8-L8,"['temporary', 'open_edx']","When the flag is ON, the new experience for Program discussions will be enabled."
+learner_home_mfe.enable_learner_home_amplitude_recommendations,lms,learner_home_mfe.enable_learner_home_amplitude_recommendations,waffle_flags,,,,,on,,,2022-11-08 15:31:18,Enables the recommendation panel on learner home MFE,2022-11-08 15:30:51,2022-10-28,False,Waffle flag to enable to recommendation panel on learner home mfe,WaffleFlag,"[32, 32, 32, 32, 32, 32, 32, 32, 32]",lms/djangoapps/learner_home/waffle.py,None,VAN-1138,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/learner_home/waffle.py#L32-L32,['temporary'],None
+learner_home_mfe.enabled,lms,learner_home_mfe.enabled,waffle_flags,True,,,,both,both,,2022-12-15 17:33:11,"Owned by Aurora Squad - Flag for state management between edx-platform Learner Dashboard and the Learner Home MFE for displaying courses for a Learner., Owned by Aurora Squad - Flag for state management between edx-platform Learner Dashboard and the Learner Home MFE for displaying courses for a Learner.",2022-10-19 20:43:04,2022-10-11,False,Waffle flag to enable to redirect user to learner home mfe,WaffleFlag,"[13, 13, 13, 13, 13, 13, 13]",lms/djangoapps/learner_home/waffle.py,,AU-879,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/learner_home/waffle.py#L13-L13,['open_edx'],
+learner_pathway_progress.enable_pathway_progress_update,lms,,waffle_switches,False,WaffleSwitch,enterprise-markhors,off,on,on,learner_pathway_progress.waffle,2022-07-18 06:05:34,,2022-07-14 08:15:16,,,,,,,,,,,
+learner_profile.redirect_to_microfrontend,lms,learner_profile.redirect_to_microfrontend,waffle_flags,True,,,,both,both,,2019-05-01 21:49:09,"Arch Team uses cases #1 (incremental rollout) and #5 (beta testing) for the new Profile micro-frontend., Arch Team uses cases #1 (incremental rollout) and #8 (open edX) for the new Profile micro-frontend.",2019-03-04 14:56:39,2019-02-19,False,Supports staged rollout of a new micro-frontend-based implementation of the profile page.,WaffleFlag,"[12, 12, 12, 12, 12, 12, 12, 12, 12]",openedx/features/learner_profile/toggles.py,2020-12-31,DEPR-17,https://github.com/openedx/edx-platform/blob/master/openedx/features/learner_profile/toggles.py#L12-L12,"['temporary', 'open_edx']",Also set settings.PROFILE_MICROFRONTEND_URL and site's ENABLE_PROFILE_MICROFRONTEND.
+learner_profile.show_achievements,lms,,waffle_flags,,,,on,,,,2017-09-07 16:02:03,,2017-09-05 17:01:49,,,,,,,,,,,
+learning_sequences.use_for_outlines,lms,,waffle_flags,,,,,both,,,,,,,,,,,,,,,,
+local_currency,lms,,waffle_switches,,,,,,on,,2017-10-24 16:00:15,,2017-10-24 16:00:10,,,,,,,,,,,
+lti_consumer.enable_database_config,lms,,waffle_flags,,,,,,both,,2022-07-27 13:58:38,,2022-07-20 15:15:32,,,,,,,,,,,
+lti_consumer.enable_external_user_id_1p1_launches,lms,,waffle_flags,True,,,,both,both,,2022-11-21 20:21:03,,2022-11-21 17:55:27,,,,,,,,,,,
+mock.flag,credentials,,waffle_flags,True,WaffleFlag,platform-arch,,off,off,mock.core.djangoapps.fake,,,,,,,,,,,,,,
+monitoring_utils.enable_memory_middleware,lms,,waffle_switches,,,,,off,,,2017-06-15 18:54:45,,2017-05-19 17:32:56,,,,,,,,,,,
+name_affirmation.verified_name,lms,,waffle_flags,True,,,,on,on,,2021-10-27 13:41:16,,2021-09-15 17:50:57,,,,,,,,,,,
+new_core_editors.use_new_problem_editor,lms,new_core_editors.use_new_problem_editor,waffle_flags,,,,,,,,,,,2021-12-1,False,This flag enables the use of the new core problem xblock editor,WaffleFlag,"[125, 125, 125, 125, 125, 125, 125, 125, 125]",cms/djangoapps/contentstore/toggles.py,2022-1-30,TNL-9306,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/contentstore/toggles.py#L125-L125,['temporary'],
+new_core_editors.use_new_text_editor,lms,new_core_editors.use_new_text_editor,waffle_flags,True,,,on,on,on,,2022-08-10 16:29:55,,2022-01-27 19:32:49,2021-12-1,False,This flag enables the use of the new core text xblock editor,WaffleFlag,"[87, 87, 87, 87, 87, 87, 87, 87, 87]",cms/djangoapps/contentstore/toggles.py,2022-1-30,TNL-9306,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/contentstore/toggles.py#L87-L87,['temporary'],
+new_core_editors.use_new_video_editor,lms,new_core_editors.use_new_video_editor,waffle_flags,True,,,on,on,on,,2022-12-05 19:00:43,,2022-09-09 17:50:36,2021-12-1,False,This flag enables the use of the new core video xblock editor,WaffleFlag,"[106, 106, 106, 106, 106, 106, 106, 106, 106]",cms/djangoapps/contentstore/toggles.py,2022-1-30,TNL-9306,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/contentstore/toggles.py#L106-L106,['temporary'],
+notices.enable_notices,lms,,waffle_flags,,,,,on,,,2021-11-16 21:31:04,,2021-10-26 19:27:20,,,,,,,,,,,
+oauth_dispatch.disable_jwt_for_mobile,lms,,waffle_switches,True,WaffleSwitch,openedx-arch-bom,off,off,off,openedx.core.djangoapps.oauth_dispatch.toggles,2022-11-17 12:26:34,,2022-10-26 13:50:19,,,,,,,,,,,
+open_edx_util.display_maintenance_warning,lms,open_edx_util.display_maintenance_warning,waffle_switches,True,WaffleSwitch,openedx-arch-bom,off,off,off,openedx.core.djangoapps.util.waffle,2018-03-26 19:51:41,Django 1.11 maintenance window,2018-03-22 21:07:36,2018-03-20,False,"Displays the maintenance warning, when active.",WaffleSwitch,"[8, 8, 8, 8, 8, 8, 8]",openedx/core/djangoapps/util/waffle.py,,https://github.com/openedx/edx-platform/pull/17735,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/util/waffle.py#L8-L8,['opt_in'],
+openresponseassessment.all_files_urls,lms,,waffle_flags,,,,,both,,,,,,,,,,,,,,,,
+openresponseassessment.enhanced_staff_grader,lms,,waffle_flags,True,,,,both,both,,2022-05-12 14:55:18,"Owned by the Aurora squad.
+
+Flag for enabling ESG/ ORA Staff Grading experience.  Use to have rich on-platform grading for ORAs with a staff grading workflow",2022-02-25 19:41:36,,,,,,,,,,,
+openresponseassessment.rubric_reuse,lms,,waffle_flags,True,,,on,on,on,,2022-03-08 19:33:03,,2021-08-31 20:41:40,,,,,,,,,,,
+openresponseassessment.team_submissions,lms,,waffle_flags,True,,,on,on,on,,2022-03-08 19:32:51,,2020-06-03 18:50:50,,,,,,,,,,,
+openresponseassessment.user_state_upload_data,lms,,waffle_flags,,,,,both,,,,,,,,,,,,,,,,
+order_history.redirect_to_microfrontend,lms,order_history.redirect_to_microfrontend,waffle_flags,True,,,,both,both,,2019-04-29 14:07:24,"Arch Team uses cases #1 (incremental rollout) and #5 (beta testing) for the new Order History implementation via micro-frontend., Arch Team uses cases #1 (incremental rollout) and #5 (beta testing) for the new Order History implementation via micro-frontend.",2019-04-12 13:41:52,2019-04-11,False,Supports staged rollout of a new micro-frontend-based implementation of the order history page.,WaffleFlag,"[9, 9, 9, 9, 9, 9, 9, 9, 9]",openedx/core/djangoapps/user_api/accounts/toggles.py,2020-12-31,DEPR-17,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/user_api/accounts/toggles.py#L9-L9,"['temporary', 'open_edx']","Also set settings.ORDER_HISTORY_MICROFRONTEND_URL and site's
+   ENABLE_ORDER_HISTORY_MICROFRONTEND."
+populate-multitenant-programs,lms,,waffle_switches,True,,,,on,on,,2017-07-27 14:57:29,,2017-07-13 10:47:41,,,,,,,,,,,
+portfolio_project.include_upsell_modal,lms,,waffle_flags,,,,,on,,,2018-02-08 22:04:17,,2018-02-08 22:03:53,,,,,,,,,,,
+programs.always_calculate_program_price_as_anonymous_user,lms,,waffle_switches,False,WaffleSwitch,content-cosmonauts,off,on,off,openedx.core.djangoapps.programs,2018-06-19 17:48:56,,2018-06-19 17:48:45,,,,,,,,,,,
+registration.enable_failure_logging,lms,registration.enable_failure_logging,waffle_flags,,,,,,,,,,,2020-04-30,False,Enable verbose logging of registration failure messages,WaffleFlag,"[111, 111, 111, 111, 111, 111, 111, 111]",openedx/core/djangoapps/user_authn/views/register.py,2020-06-01,,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/user_authn/views/register.py#L111-L111,['temporary'],This temporary feature toggle does not have a target removal date.
+request_utils.capture_cookie_sizes,lms,,waffle_flags,True,,,off,off,off,,2022-01-10 15:42:26,,2021-01-21 18:23:11,,,,,,,,,,,
+require_course_email_auth,lms,require_course_email_auth,configuration_models,,,,,,,,,,,2016-05-05,True,"If the flag is enabled, course-specific authorization is
+      required, and the course_id is either not provided or not authorized, the feature
+      is not available.",ConfigurationModel,"[477, 477, 477, 477, 477, 477]",lms/djangoapps/bulk_email/models.py,,,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/bulk_email/models.py#L477-L477,['open_edx'],
+safe_session.log_request_user_changes,lms,,waffle_flags,,,,,off,,,2021-03-25 20:10:28,,2021-03-25 19:54:43,,,,,,,,,,,
+sailthru.audit_purchase_enabled,lms,,waffle_switches,False,,,,off,on,,2021-04-21 13:20:27,,2018-06-26 06:34:28,,,,,,,,,,,
+schedule.create_schedules_for_course,lms,,waffle_flags,,,,,off,,,,,,,,,,,,,,,,
+schedules.course_update_show_unsubscribe,lms,,waffle_switches,True,WaffleSwitch,content-cosmonauts,off,off,off,openedx.core.djangoapps.schedules.config,,,,,,,,,,,,,,
+schedules.create_schedules_for_course,lms,,waffle_flags,True,,,,both,both,,2020-07-20 17:31:51,,2017-12-11 16:00:27,,,,,,,,,,,
+schedules.create_schedules_for_course waffle,lms,,waffle_flags,,,,,both,,,,,,,,,,,,,,,,
+schedules.enable_debugging,lms,schedules.enable_debugging,waffle_flags,,,,,on,,,2017-09-19 21:02:34,,2017-09-19 21:02:06,2017-09-17,False,Enable debug level of logging for schedules messages.,WaffleFlag,"[13, 13, 13, 13, 13, 13]",openedx/core/djangoapps/schedules/config.py,,,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/schedules/config.py#L13-L13,['open_edx'],
+schedules.external_updates,lms,,waffle_flags,,,,,on,,,2021-03-16 14:00:56,"Owned by Engage squad. This is an experiment where we test sending course updates from Braze, not edx-platform.",2021-03-04 15:16:56,,,,,,,,,,,
+schedules.external_updates.0,lms,,waffle_flags,,,,,both,,,2021-03-04 15:21:16,,2021-03-04 15:17:59,,,,,,,,,,,
+schedules.external_updates.1,lms,,waffle_flags,,,,,both,,,2021-03-04 15:21:27,,2021-03-04 15:18:12,,,,,,,,,,,
+schedules.send_updates_for_course,lms,,waffle_flags,False,,,,both,on,,2017-12-07 15:00:23,,2017-11-08 17:38:58,,,,,,,,,,,
+seo.enable_anonymous_courseware_access,lms,,waffle_flags,True,,,,both,both,,,,,,,,,,,,,,,
+streak_celebration.AA-759,lms,,waffle_flags,,,,,off,,,,,,,,,,,,,,,,
+streak_celebration.discount_experiment_AA759,lms,,waffle_flags,,,,,off,,,2021-07-12 12:32:25,,2021-05-11 13:39:34,,,,,,,,,,,
+student.courseenrollment_admin,lms,student.courseenrollment_admin,waffle_switches,False,WaffleSwitch,content-tnl,off,off,on,common.djangoapps.student.admin,2021-05-27 13:39:57,,2019-06-20 21:04:32,2018-08-01,False,This toggle will enable the rendering of the admin view of the CourseEnrollment model.,WaffleSwitch,"[53, 53, 53, 53, 53, 53, 53, 53]",common/djangoapps/student/admin.py,,https://github.com/openedx/edx-platform/pull/18638,https://github.com/openedx/edx-platform/blob/master/common/djangoapps/student/admin.py#L53-L53,"['opt_in', 'open_edx']","Enabling this toggle may cause performance problems. The CourseEnrollment admin view
+     makes DB queries that could cause site outages for a large enough Open edX installation."
+student.enable_2u_recommendations,lms,student.enable_2u_recommendations,waffle_flags,,,,,both,,,2022-09-28 14:08:05,Flag to enable 2U LOB static callouts on user dashboard,2022-09-22 12:13:09,2022-09-20,False,Supports rollout of a POC for 2U recommendations.,WaffleFlag,"[26, 26, 26, 26, 26, 26, 26, 26, 26]",common/djangoapps/student/toggles.py,None,VAN-1094,https://github.com/openedx/edx-platform/blob/master/common/djangoapps/student/toggles.py#L26-L26,['temporary'],None
+student.enable_amplitude_recommendations,lms,student.enable_amplitude_recommendations,waffle_flags,False,,,,on,off,,2022-07-28 16:48:26,,2022-07-01 09:35:35,2022-06-24,False,Supports rollout of a POC for amplitude recommendations.,WaffleFlag,"[9, 9, 9, 9, 9, 9, 9, 9, 9]",common/djangoapps/student/toggles.py,None,VAN-984,https://github.com/openedx/edx-platform/blob/master/common/djangoapps/student/toggles.py#L9-L9,['temporary'],None
+student.enable_enrollment_confirmation_email,lms,student.enable_enrollment_confirmation_email,waffle_flags,,,,,on,,,2022-11-25 04:59:47,"Owned by vanguards - This flag enables the course enrollment confirmation email.
+Launch details: https://2u-internal.atlassian.net/l/cp/jpouu1PB",2022-09-06 11:44:02,2022-08-05,False,Enable course enrollment email template,WaffleFlag,"[43, 43, 43, 43, 43, 43, 43, 43, 43]",common/djangoapps/student/toggles.py,None,VAN-1129,https://github.com/openedx/edx-platform/blob/master/common/djangoapps/student/toggles.py#L43-L43,['opt_in'],None
+student.enable_redesign_enrollment_confirmation_email,lms,,waffle_flags,,,,,,on,,2022-09-05 13:17:30,,2022-09-05 13:00:20,,,,,,,,,,,
+student.experiments.bundles_on_dashboard,lms,,waffle_flags,False,,,,both,on,,2018-02-22 19:15:44,,2017-12-19 15:27:46,,,,,,,,,,,
+studio.async_register_exams,lms,,waffle_flags,False,,,on,both,both,,2021-04-30 14:26:06,,2021-04-30 14:25:46,,,,,,,,,,,
+studio.custom_relative_dates,lms,studio.custom_relative_dates,waffle_flags,True,,,both,both,both,,2022-03-25 14:26:21,,2021-07-29 17:02:56,2021-07-12,False,Waffle flag to enable custom pacing input for Personalized Learner Schedule (PLS).,CourseWaffleFlag,"[44, 44, 44, 44, 44, 44, 44, 44, 44]",cms/djangoapps/contentstore/config/waffle.py,2021-12-31,https://openedx.atlassian.net/browse/AA-844,https://github.com/openedx/edx-platform/blob/master/cms/djangoapps/contentstore/config/waffle.py#L44-L44,['temporary'],Flag course_experience.relative_dates should also be active for relative dates functionalities to work.
+studio.enable_checklists_page,lms,,waffle_switches,,,,on,,,,2018-08-24 20:00:38,,2018-08-24 19:31:23,,,,,,,,,,,
+studio.enable_checklists_quality,lms,,waffle_flags,False,,,both,both,on,,2020-06-23 20:47:39,,2018-08-24 19:31:48,,,,,,,,,,,
+studio.enable_policy_page,lms,,waffle_switches,False,WaffleSwitch,,off,on,on,cms.djangoapps.contentstore.config.waffle,2018-02-22 16:09:11,,2018-02-22 16:07:38,,,,,,,,,,,
+studio.enable_proctoring_provider_override,lms,,waffle_flags,,,,,both,,,,,,,,,,,,,,,,
+studio.enable_proctoring_provider_overrides,lms,,waffle_flags,True,,,,both,both,,2020-04-01 19:21:03,,2019-01-02 21:07:46,,,,,,,,,,,
+studio.enable_video_upload_pagination,lms,,waffle_flags,True,,,,both,both,,,,,,,,,,,,,,,
+studio.library_authoring_mfe,lms,,waffle_flags,,,,,,off,,2021-09-30 19:03:01,,2020-08-20 12:44:13,,,,,,,,,,,
+studio.show_review_rules,lms,,waffle_flags,True,,,,both,both,,,,,,,,,,,,,,,
+studio_home.enable_global_staff_optimization,lms,,waffle_switches,False,,,on,on,off,,2018-06-08 20:08:48,,2017-06-13 18:11:34,,,,,,,,,,,
+teams.enable_teams_app,lms,teams.enable_teams_app,waffle_flags,False,,,on,on,both,,2022-03-09 09:40:01,,2021-10-22 14:01:24,2021-10-07,False,Waffle flag to enable teams app for a course,WaffleFlag,"[8, 8, 8, 8, 8, 8, 8, 8, 8]",lms/djangoapps/teams/waffle.py,2021-11-01,TNL-8816,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/teams/waffle.py#L8-L8,"['temporary', 'open_edx']","When the flag is ON, the teams app will be visible in the new course authoring mfe."
+third_party_auth.enable_multiple_sso_accounts_association_to_saml_user,lms,,waffle_switches,True,,,,on,on,,2021-02-01 20:25:56,,2021-02-01 11:11:44,,,,,,,,,,,
+user_api.enable_multiple_user_enterprises_feature,lms,,waffle_switches,,,,,off,,,2021-06-30 10:22:28,,2020-02-19 12:24:41,,,,,,,,,,,
+user_api.prevent_auth_user_writes,lms,,waffle_switches,True,,,off,off,off,,2018-03-29 16:52:06,,2018-03-28 21:56:19,,,,,,,,,,,
+user_authn.admin_auth_redirect_to_lms,lms,,waffle_flags,True,,,on,on,on,,2022-03-07 12:42:06,,2022-03-07 07:41:17,,,,,,,,,,,
+user_authn.enable_login_using_thirdparty_auth_only,lms,user_authn.enable_login_using_thirdparty_auth_only,waffle_switches,False,WaffleSwitch,engagement-vanguards,off,on,on,openedx.core.djangoapps.user_authn.config.waffle,2020-02-05 18:02:36,,2019-12-06 06:19:08,2019-11-20,False,"When enabled, users must be sign in using their allowed domain SSO account. This includes sign-
+   ins to the Django admin dashboard at ""/admin"".",WaffleSwitch,"[10, 10, 10, 10, 10, 10, 10, 10, 10]",openedx/core/djangoapps/user_authn/config/waffle.py,2020-01-31,ENT-2461,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/user_authn/config/waffle.py#L10-L10,['temporary'],Requires THIRD_PARTY_AUTH_ONLY_DOMAIN to also be set.
+user_authn.enable_pwned_password_api,lms,user_authn.enable_pwned_password_api,waffle_switches,False,WaffleSwitch,engagement-vanguards,off,on,on,openedx.core.djangoapps.user_authn.config.waffle,2021-09-29 08:38:08,,2021-09-29 08:31:43,2021-09-22,False,"When enabled, user password's vulnerability would be checked via pwned password database",WaffleSwitch,"[24, 24, 24, 24, 24, 24, 24, 24]",openedx/core/djangoapps/user_authn/config/waffle.py,2021-12-31,VAN-664,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/user_authn/config/waffle.py#L24-L24,['temporary'],
+user_authn.jwt_cookies,lms,,waffle_flags,True,,,,on,on,,2018-10-22 20:50:17,,2018-10-12 14:17:42,,,,,,,,,,,
+user_authn.update_login_user_error_status_code,lms,,waffle_switches,True,,,on,on,on,,2019-12-06 20:19:05,,2019-12-05 19:26:19,,,,,,,,,,,
+verify_student.optimised_is_small_course,lms,verify_student.optimised_is_small_course,waffle_flags,,,,,,,,,,,2020-07-02,False,Supports staged rollout to improved is_small_course method.,WaffleFlag,"[21, 21, 21, 21, 21, 21, 21, 21]",lms/djangoapps/instructor/toggles.py,,PROD-1740,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/instructor/toggles.py#L21-L21,['open_edx'],"Description mentions staged rollout, but the use case is not set as temporary.
+      This may actually be a temporary toggle."
+verify_student.redirect_to_idv_microfrontend,lms,,waffle_flags,False,,,,on,off,,2020-09-15 19:58:24,,2020-07-14 13:47:19,,,,,,,,,,,
+verify_student.use_new_email_templates,lms,verify_student.use_new_email_templates,waffle_flags,True,,,,on,on,,2020-07-02 12:44:16,,2020-06-29 09:52:41,2020-06-25,False,"Supports staged rollout to students for a new email templates
+   implementation for ID verification.",WaffleFlag,"[10, 10, 10, 10, 10, 10, 10, 10, 10]",lms/djangoapps/verify_student/toggles.py,None,PROD-1639,https://github.com/openedx/edx-platform/blob/master/lms/djangoapps/verify_student/toggles.py#L10-L10,"['temporary', 'open_edx']",This temporary feature toggle does not have a target removal date.
+verify_student_disable_account_activation_requirement,lms,,waffle_switches,True,,,,on,on,,2017-05-30 13:47:30,ENT-307,2017-05-17 17:32:57,,,,,,,,,,,
+videos.deprecate_youtube,lms,videos.deprecate_youtube,waffle_flags,True,,,,both,both,,2019-09-16 19:03:18,This flag decides whether to deprecate YT for edX videos hosting or not.,2018-09-05 09:40:10,2018-08-03,False,"Waffle flag telling whether youtube is deprecated. When enabled, videos are no longer uploaded
+   to YouTube as part of the video pipeline.",CourseWaffleFlag,"[14, 14, 14, 14, 14, 14, 14]",openedx/core/djangoapps/video_pipeline/config/waffle.py,,https://github.com/openedx/edx-platform/pull/18765,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/video_pipeline/config/waffle.py#L14-L14,['open_edx'],
+videos.enable_devstack_video_uploads,lms,videos.enable_devstack_video_uploads,waffle_flags,,,,,,,,,,,2020-03-12,False,"When enabled, use Multi-Factor Authentication (MFA) for authenticating to AWS. These short-
+   lived access tokens are well suited for development (probably?). [At the time of annotation, the exact consequences
+   of enabling this feature toggle are uncertain.]",WaffleFlag,"[24, 24, 24, 24, 24, 24, 24, 24]",openedx/core/djangoapps/video_pipeline/config/waffle.py,,https://github.com/openedx/edx-platform/pull/23375,https://github.com/openedx/edx-platform/blob/master/openedx/core/djangoapps/video_pipeline/config/waffle.py#L24-L24,['open_edx'],"Enabling this feature requires that the ROLE_ARN, MFA_SERIAL_NUMBER, MFA_TOKEN settings are
+   properly defined."
+videos.enable_vem_pipeline,lms,,waffle_flags,True,,,,both,both,,,,,,,,,,,,,,,
+videos.video_image_upload_enabled,lms,,waffle_switches,True,,,,on,on,,2017-07-07 11:22:46,,2017-07-06 19:12:48,,,,,,,,,,,
+wharton_ecommerce_enabled,lms,,waffle_switches,True,,,,on,on,,2017-10-05 07:36:29,,2017-10-03 12:47:24,,,,,,,,,,,
+xmodule.rev_1377_rollout,lms,,waffle_flags,True,,,,on,on,,2020-12-09 20:03:36,"This flag is being used by the Purchase squad to incrementally develop +  roll out a risky change to gate timed exams. See https://openedx.atlassian.net/browse/REV-1377 for more context., This flag is being used by the Purchase squad to incrementally develop + roll out a risky change to gate timed exams. See https://openedx.atlassian.net/browse/REV-1377 for more context.",2020-09-24 17:26:41,,,,,,,,,,,

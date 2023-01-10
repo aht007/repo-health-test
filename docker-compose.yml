@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  metabase:
+    image: ${DOCKER_IMAGE:-metabase/metabase:latest}
+    volumes:
+      - ${PWD}/dashboards/dashboard.db:/metabase-data/dashboard.db
+    ports:
+      - '3000:3000'
